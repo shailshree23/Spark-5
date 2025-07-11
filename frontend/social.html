@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Social Pulse</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+  <style>
+    .pulse-card { background: #fff; color: #222; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-radius: 1rem; }
+    .pulse-section { background: #f9fafb; border-radius: 1rem; box-shadow: 0 1px 6px rgba(0,0,0,0.04); padding: 2rem 1.5rem; margin-bottom: 2rem; }
+    .dark .pulse-card { background: #1e293b; color: #f1f5f9; }
+    .dark .pulse-section { background: #0f172a; }
+    .dark body { background: #0f172a; }
+    .dark .pulse-recommend { background: #1e293b; color: #fbbf24; }
+    .toggle-dark { cursor: pointer; }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen transition-colors duration-300">
+  <nav class="bg-blue-800 p-4 text-white flex justify-between items-center shadow-md">
+    <div class="text-2xl font-bold tracking-wide flex items-center"><span class="mr-2">💡</span>Social Pulse</div>
+    <div class="space-x-4 text-lg flex items-center">
+      <a href="index.html" class="hover:text-blue-200">Map</a>
+      <a href="planner.html" class="hover:text-blue-200">Planner</a>
+      <a href="social.html" class="hover:text-blue-200 font-bold underline">Social Pulse</a>
+      <a href="insights.html" class="hover:text-blue-200">Insights</a>
+      <span class="ml-4 toggle-dark px-3 py-1 rounded bg-blue-700 hover:bg-blue-600 cursor-pointer" id="toggle-dark">🌙</span>
+    </div>
+  </nav>
+  <div class="container mx-auto mt-8 space-y-8">
+    <div class="flex flex-wrap gap-4 justify-center">
+      <select id="source" class="p-3 border rounded shadow bg-white dark:bg-slate-800 dark:text-white">
+        <option value="pytrends">PyTrends</option>
+        <option value="twitter">Twitter</option>
+        <option value="instagram">Instagram</option>
+      </select>
+      <input type="number" id="days" class="p-3 border rounded shadow bg-white dark:bg-slate-800 dark:text-white" placeholder="Last N days" value="7" />
+      <button id="load-social-btn" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-bold shadow hover:scale-105 transition">Load Social Trends</button>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 text-white font-bold">
+      <div class="pulse-card p-6 flex flex-col items-center">
+        <div class="text-2xl mb-2">🔥</div>
+        <div class="text-sm uppercase tracking-wider">Most Popular Product</div>
+        <div id="most-popular" class="text-2xl mt-2">-</div>
+      </div>
+      <div class="pulse-card p-6 flex flex-col items-center">
+        <div class="text-2xl mb-2">🏷️</div>
+        <div class="text-sm uppercase tracking-wider">Most Popular Category</div>
+        <div id="most-popular-category" class="text-2xl mt-2">-</div>
+      </div>
+      <div class="pulse-card p-6 flex flex-col items-center">
+        <div class="text-2xl mb-2">📊</div>
+        <div class="text-sm uppercase tracking-wider">Total Trend Volume</div>
+        <div id="total-trend-volume" class="text-2xl mt-2">-</div>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="pulse-card flex flex-col items-center p-6">
+        <div class="pulse-title mb-2 text-blue-700 dark:text-blue-300 font-semibold">Top Trending Products</div>
+        <canvas id="bar-chart" height="120"></canvas>
+      </div>
+      <div class="pulse-card flex flex-col items-center p-6">
+        <div class="pulse-title mb-2 text-blue-700 dark:text-blue-300 font-semibold">Category Distribution</div>
+        <canvas id="pie-chart-cat" height="120"></canvas>
+      </div>
+    </div>
+    <div class="pulse-section">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <div class="pulse-title mb-2 text-blue-700 dark:text-blue-300 font-semibold">Trend Over Time (Top Products)</div>
+          <canvas id="line-chart-products" height="120"></canvas>
+        </div>
+        <div>
+          <div class="pulse-title mb-2 text-blue-700 dark:text-blue-300 font-semibold">Trend Over Time (Categories)</div>
+          <canvas id="area-chart-categories" height="120"></canvas>
+        </div>
+      </div>
+      <div class="pulse-recommend mt-8">
+        <h2 class="text-lg font-semibold mb-2">Recommended to Stock</h2>
+        <ul id="recommend-list" class="space-y-2"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="js/social.js"></script>
+  <script>
+    document.getElementById("load-social-btn").onclick = loadSocial;
+    document.getElementById("toggle-dark").onclick = function() {
+      document.body.classList.toggle("dark");
+      document.documentElement.classList.toggle("dark");
+    };
+  </script>
+</body>
+</html>

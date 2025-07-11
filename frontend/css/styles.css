@@ -1,0 +1,34 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#map {
+  height: 600px;
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+nav a {
+  transition: color 0.2s;
+}
+
+/* Social Pulse custom styles */
+.pulse-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.pulse-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 32px rgba(244,63,94,0.18);
+}
+.pulse-section {
+  transition: box-shadow 0.2s;
+}
+.pulse-recommend li {
+  transition: color 0.2s;
+}
+.pulse-recommend li:hover {
+  color: #fbbf24;
+}

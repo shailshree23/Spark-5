@@ -1,0 +1,645 @@
+date,region,warehouse,category,product,sales
+2024-01-01,Delhi,WH1,Electronics,Smartphone,120
+2024-02-01,Delhi,WH1,Electronics,Smartphone,180
+2024-03-01,Delhi,WH1,Electronics,Smartphone,90
+2024-04-01,Delhi,WH1,Electronics,Smartphone,200
+2024-05-01,Delhi,WH1,Electronics,Smartphone,150
+2024-06-01,Delhi,WH1,Electronics,Smartphone,80
+2024-07-01,Delhi,WH1,Electronics,Smartphone,170
+2024-08-01,Delhi,WH1,Electronics,Smartphone,130
+2024-09-01,Delhi,WH1,Electronics,Smartphone,210
+2024-10-01,Delhi,WH1,Electronics,Smartphone,160
+2024-11-01,Delhi,WH1,Electronics,Smartphone,190
+2024-12-01,Delhi,WH1,Electronics,Smartphone,140
+2025-01-01,Delhi,WH1,Electronics,Smartphone,120
+2025-02-01,Delhi,WH1,Electronics,Smartphone,180
+2025-03-01,Delhi,WH1,Electronics,Smartphone,90
+2025-04-01,Delhi,WH1,Electronics,Smartphone,200
+2025-05-01,Delhi,WH1,Electronics,Smartphone,150
+2025-06-01,Delhi,WH1,Electronics,Smartphone,80
+2025-07-01,Delhi,WH1,Electronics,Smartphone,170
+2025-08-01,Delhi,WH1,Electronics,Smartphone,130
+2025-09-01,Delhi,WH1,Electronics,Smartphone,210
+2025-10-01,Delhi,WH1,Electronics,Smartphone,160
+2025-11-01,Delhi,WH1,Electronics,Smartphone,190
+2025-12-01,Delhi,WH1,Electronics,Smartphone,140
+2024-01-01,Delhi,WH1,Electronics,Laptop,80
+2024-02-01,Delhi,WH1,Electronics,Laptop,110
+2024-03-01,Delhi,WH1,Electronics,Laptop,70
+2024-04-01,Delhi,WH1,Electronics,Laptop,150
+2024-05-01,Delhi,WH1,Electronics,Laptop,120
+2024-06-01,Delhi,WH1,Electronics,Laptop,60
+2024-07-01,Delhi,WH1,Electronics,Laptop,140
+2024-08-01,Delhi,WH1,Electronics,Laptop,100
+2024-09-01,Delhi,WH1,Electronics,Laptop,180
+2024-10-01,Delhi,WH1,Electronics,Laptop,130
+2024-11-01,Delhi,WH1,Electronics,Laptop,160
+2024-12-01,Delhi,WH1,Electronics,Laptop,110
+2025-01-01,Delhi,WH1,Electronics,Laptop,80
+2025-02-01,Delhi,WH1,Electronics,Laptop,110
+2025-03-01,Delhi,WH1,Electronics,Laptop,70
+2025-04-01,Delhi,WH1,Electronics,Laptop,150
+2025-05-01,Delhi,WH1,Electronics,Laptop,120
+2025-06-01,Delhi,WH1,Electronics,Laptop,60
+2025-07-01,Delhi,WH1,Electronics,Laptop,140
+2025-08-01,Delhi,WH1,Electronics,Laptop,100
+2025-09-01,Delhi,WH1,Electronics,Laptop,180
+2025-10-01,Delhi,WH1,Electronics,Laptop,130
+2025-11-01,Delhi,WH1,Electronics,Laptop,160
+2025-12-01,Delhi,WH1,Electronics,Laptop,110
+2024-01-01,Delhi,WH1,Electronics,Smartwatch,60
+2024-02-01,Delhi,WH1,Electronics,Smartwatch,85
+2024-03-01,Delhi,WH1,Electronics,Smartwatch,50
+2024-04-01,Delhi,WH1,Electronics,Smartwatch,120
+2024-05-01,Delhi,WH1,Electronics,Smartwatch,90
+2024-06-01,Delhi,WH1,Electronics,Smartwatch,40
+2024-07-01,Delhi,WH1,Electronics,Smartwatch,100
+2024-08-01,Delhi,WH1,Electronics,Smartwatch,70
+2024-09-01,Delhi,WH1,Electronics,Smartwatch,150
+2024-10-01,Delhi,WH1,Electronics,Smartwatch,110
+2024-11-01,Delhi,WH1,Electronics,Smartwatch,130
+2024-12-01,Delhi,WH1,Electronics,Smartwatch,90
+2025-01-01,Delhi,WH1,Electronics,Smartwatch,60
+2025-02-01,Delhi,WH1,Electronics,Smartwatch,85
+2025-03-01,Delhi,WH1,Electronics,Smartwatch,50
+2025-04-01,Delhi,WH1,Electronics,Smartwatch,120
+2025-05-01,Delhi,WH1,Electronics,Smartwatch,90
+2025-06-01,Delhi,WH1,Electronics,Smartwatch,40
+2025-07-01,Delhi,WH1,Electronics,Smartwatch,100
+2025-08-01,Delhi,WH1,Electronics,Smartwatch,70
+2025-09-01,Delhi,WH1,Electronics,Smartwatch,150
+2025-10-01,Delhi,WH1,Electronics,Smartwatch,110
+2025-11-01,Delhi,WH1,Electronics,Smartwatch,130
+2025-12-01,Delhi,WH1,Electronics,Smartwatch,90
+2024-01-01,Delhi,WH1,Electronics,Wireless Earbuds,70
+2024-02-01,Delhi,WH1,Electronics,Wireless Earbuds,95
+2024-03-01,Delhi,WH1,Electronics,Wireless Earbuds,60
+2024-04-01,Delhi,WH1,Electronics,Wireless Earbuds,150
+2024-05-01,Delhi,WH1,Electronics,Wireless Earbuds,120
+2024-06-01,Delhi,WH1,Electronics,Wireless Earbuds,50
+2024-07-01,Delhi,WH1,Electronics,Wireless Earbuds,130
+2024-08-01,Delhi,WH1,Electronics,Wireless Earbuds,90
+2024-09-01,Delhi,WH1,Electronics,Wireless Earbuds,180
+2024-10-01,Delhi,WH1,Electronics,Wireless Earbuds,140
+2024-11-01,Delhi,WH1,Electronics,Wireless Earbuds,160
+2024-12-01,Delhi,WH1,Electronics,Wireless Earbuds,110
+2025-01-01,Delhi,WH1,Electronics,Wireless Earbuds,70
+2025-02-01,Delhi,WH1,Electronics,Wireless Earbuds,95
+2025-03-01,Delhi,WH1,Electronics,Wireless Earbuds,60
+2025-04-01,Delhi,WH1,Electronics,Wireless Earbuds,150
+2025-05-01,Delhi,WH1,Electronics,Wireless Earbuds,120
+2025-06-01,Delhi,WH1,Electronics,Wireless Earbuds,50
+2025-07-01,Delhi,WH1,Electronics,Wireless Earbuds,130
+2025-08-01,Delhi,WH1,Electronics,Wireless Earbuds,90
+2025-09-01,Delhi,WH1,Electronics,Wireless Earbuds,180
+2025-10-01,Delhi,WH1,Electronics,Wireless Earbuds,140
+2025-11-01,Delhi,WH1,Electronics,Wireless Earbuds,160
+2025-12-01,Delhi,WH1,Electronics,Wireless Earbuds,110
+2024-01-01,Delhi,WH1,Fashion,Kurta,90
+2024-02-01,Delhi,WH1,Fashion,Kurta,110
+2024-03-01,Delhi,WH1,Fashion,Kurta,70
+2024-04-01,Delhi,WH1,Fashion,Kurta,140
+2024-05-01,Delhi,WH1,Fashion,Kurta,110
+2024-06-01,Delhi,WH1,Fashion,Kurta,50
+2024-07-01,Delhi,WH1,Fashion,Kurta,120
+2024-08-01,Delhi,WH1,Fashion,Kurta,90
+2024-09-01,Delhi,WH1,Fashion,Kurta,160
+2024-10-01,Delhi,WH1,Fashion,Kurta,120
+2024-11-01,Delhi,WH1,Fashion,Kurta,140
+2024-12-01,Delhi,WH1,Fashion,Kurta,100
+2025-01-01,Delhi,WH1,Fashion,Kurta,90
+2025-02-01,Delhi,WH1,Fashion,Kurta,110
+2025-03-01,Delhi,WH1,Fashion,Kurta,70
+2025-04-01,Delhi,WH1,Fashion,Kurta,140
+2025-05-01,Delhi,WH1,Fashion,Kurta,110
+2025-06-01,Delhi,WH1,Fashion,Kurta,50
+2025-07-01,Delhi,WH1,Fashion,Kurta,120
+2025-08-01,Delhi,WH1,Fashion,Kurta,90
+2025-09-01,Delhi,WH1,Fashion,Kurta,160
+2025-10-01,Delhi,WH1,Fashion,Kurta,120
+2025-11-01,Delhi,WH1,Fashion,Kurta,140
+2025-12-01,Delhi,WH1,Fashion,Kurta,100
+2024-01-01,Delhi,WH1,Fashion,Guava Girl Dress,40
+2024-02-01,Delhi,WH1,Fashion,Guava Girl Dress,50
+2024-03-01,Delhi,WH1,Fashion,Guava Girl Dress,30
+2024-04-01,Delhi,WH1,Fashion,Guava Girl Dress,60
+2024-05-01,Delhi,WH1,Fashion,Guava Girl Dress,45
+2024-06-01,Delhi,WH1,Fashion,Guava Girl Dress,20
+2024-07-01,Delhi,WH1,Fashion,Guava Girl Dress,50
+2024-08-01,Delhi,WH1,Fashion,Guava Girl Dress,35
+2024-09-01,Delhi,WH1,Fashion,Guava Girl Dress,70
+2024-10-01,Delhi,WH1,Fashion,Guava Girl Dress,50
+2024-11-01,Delhi,WH1,Fashion,Guava Girl Dress,60
+2024-12-01,Delhi,WH1,Fashion,Guava Girl Dress,40
+2025-01-01,Delhi,WH1,Fashion,Guava Girl Dress,40
+2025-02-01,Delhi,WH1,Fashion,Guava Girl Dress,50
+2025-03-01,Delhi,WH1,Fashion,Guava Girl Dress,30
+2025-04-01,Delhi,WH1,Fashion,Guava Girl Dress,60
+2025-05-01,Delhi,WH1,Fashion,Guava Girl Dress,45
+2025-06-01,Delhi,WH1,Fashion,Guava Girl Dress,20
+2025-07-01,Delhi,WH1,Fashion,Guava Girl Dress,50
+2025-08-01,Delhi,WH1,Fashion,Guava Girl Dress,35
+2025-09-01,Delhi,WH1,Fashion,Guava Girl Dress,70
+2025-10-01,Delhi,WH1,Fashion,Guava Girl Dress,50
+2025-11-01,Delhi,WH1,Fashion,Guava Girl Dress,60
+2025-12-01,Delhi,WH1,Fashion,Guava Girl Dress,40
+2024-01-01,Delhi,WH1,Fashion,Sneakers,100
+2024-02-01,Delhi,WH1,Fashion,Sneakers,130
+2024-03-01,Delhi,WH1,Fashion,Sneakers,90
+2024-04-01,Delhi,WH1,Fashion,Sneakers,180
+2024-05-01,Delhi,WH1,Fashion,Sneakers,150
+2024-06-01,Delhi,WH1,Fashion,Sneakers,70
+2024-07-01,Delhi,WH1,Fashion,Sneakers,160
+2024-08-01,Delhi,WH1,Fashion,Sneakers,120
+2024-09-01,Delhi,WH1,Fashion,Sneakers,200
+2024-10-01,Delhi,WH1,Fashion,Sneakers,150
+2024-11-01,Delhi,WH1,Fashion,Sneakers,180
+2024-12-01,Delhi,WH1,Fashion,Sneakers,130
+2025-01-01,Delhi,WH1,Fashion,Sneakers,100
+2025-02-01,Delhi,WH1,Fashion,Sneakers,130
+2025-03-01,Delhi,WH1,Fashion,Sneakers,90
+2025-04-01,Delhi,WH1,Fashion,Sneakers,180
+2025-05-01,Delhi,WH1,Fashion,Sneakers,150
+2025-06-01,Delhi,WH1,Fashion,Sneakers,70
+2025-07-01,Delhi,WH1,Fashion,Sneakers,160
+2025-08-01,Delhi,WH1,Fashion,Sneakers,120
+2025-09-01,Delhi,WH1,Fashion,Sneakers,200
+2025-10-01,Delhi,WH1,Fashion,Sneakers,150
+2025-11-01,Delhi,WH1,Fashion,Sneakers,180
+2025-12-01,Delhi,WH1,Fashion,Sneakers,130
+2024-01-01,Delhi,WH1,Fashion,T-Shirts,150
+2024-02-01,Delhi,WH1,Fashion,T-Shirts,180
+2024-03-01,Delhi,WH1,Fashion,T-Shirts,130
+2024-04-01,Delhi,WH1,Fashion,T-Shirts,220
+2024-05-01,Delhi,WH1,Fashion,T-Shirts,190
+2024-06-01,Delhi,WH1,Fashion,T-Shirts,100
+2024-07-01,Delhi,WH1,Fashion,T-Shirts,200
+2024-08-01,Delhi,WH1,Fashion,T-Shirts,150
+2024-09-01,Delhi,WH1,Fashion,T-Shirts,240
+2024-10-01,Delhi,WH1,Fashion,T-Shirts,190
+2024-11-01,Delhi,WH1,Fashion,T-Shirts,220
+2024-12-01,Delhi,WH1,Fashion,T-Shirts,170
+2025-01-01,Delhi,WH1,Fashion,T-Shirts,150
+2025-02-01,Delhi,WH1,Fashion,T-Shirts,180
+2025-03-01,Delhi,WH1,Fashion,T-Shirts,130
+2025-04-01,Delhi,WH1,Fashion,T-Shirts,220
+2025-05-01,Delhi,WH1,Fashion,T-Shirts,190
+2025-06-01,Delhi,WH1,Fashion,T-Shirts,100
+2025-07-01,Delhi,WH1,Fashion,T-Shirts,200
+2025-08-01,Delhi,WH1,Fashion,T-Shirts,150
+2025-09-01,Delhi,WH1,Fashion,T-Shirts,240
+2025-10-01,Delhi,WH1,Fashion,T-Shirts,190
+2025-11-01,Delhi,WH1,Fashion,T-Shirts,220
+2025-12-01,Delhi,WH1,Fashion,T-Shirts,170
+2024-01-01,Delhi,WH1,Grocery,Rice,200
+2024-02-01,Delhi,WH1,Grocery,Rice,230
+2024-03-01,Delhi,WH1,Grocery,Rice,180
+2024-04-01,Delhi,WH1,Grocery,Rice,250
+2024-05-01,Delhi,WH1,Grocery,Rice,220
+2024-06-01,Delhi,WH1,Grocery,Rice,150
+2024-07-01,Delhi,WH1,Grocery,Rice,210
+2024-08-01,Delhi,WH1,Grocery,Rice,170
+2024-09-01,Delhi,WH1,Grocery,Rice,260
+2024-10-01,Delhi,WH1,Grocery,Rice,210
+2024-11-01,Delhi,WH1,Grocery,Rice,240
+2024-12-01,Delhi,WH1,Grocery,Rice,190
+2025-01-01,Delhi,WH1,Grocery,Rice,200
+2025-02-01,Delhi,WH1,Grocery,Rice,230
+2025-03-01,Delhi,WH1,Grocery,Rice,180
+2025-04-01,Delhi,WH1,Grocery,Rice,250
+2025-05-01,Delhi,WH1,Grocery,Rice,220
+2025-06-01,Delhi,WH1,Grocery,Rice,150
+2025-07-01,Delhi,WH1,Grocery,Rice,210
+2025-08-01,Delhi,WH1,Grocery,Rice,170
+2025-09-01,Delhi,WH1,Grocery,Rice,260
+2025-10-01,Delhi,WH1,Grocery,Rice,210
+2025-11-01,Delhi,WH1,Grocery,Rice,240
+2025-12-01,Delhi,WH1,Grocery,Rice,190
+2024-01-01,Delhi,WH1,Grocery,Flour,120
+2024-02-01,Delhi,WH1,Grocery,Flour,150
+2024-03-01,Delhi,WH1,Grocery,Flour,100
+2024-04-01,Delhi,WH1,Grocery,Flour,180
+2024-05-01,Delhi,WH1,Grocery,Flour,150
+2024-06-01,Delhi,WH1,Grocery,Flour,80
+2024-07-01,Delhi,WH1,Grocery,Flour,130
+2024-08-01,Delhi,WH1,Grocery,Flour,90
+2024-09-01,Delhi,WH1,Grocery,Flour,190
+2024-10-01,Delhi,WH1,Grocery,Flour,150
+2024-11-01,Delhi,WH1,Grocery,Flour,180
+2024-12-01,Delhi,WH1,Grocery,Flour,130
+2025-01-01,Delhi,WH1,Grocery,Flour,120
+2025-02-01,Delhi,WH1,Grocery,Flour,150
+2025-03-01,Delhi,WH1,Grocery,Flour,100
+2025-04-01,Delhi,WH1,Grocery,Flour,180
+2025-05-01,Delhi,WH1,Grocery,Flour,150
+2025-06-01,Delhi,WH1,Grocery,Flour,80
+2025-07-01,Delhi,WH1,Grocery,Flour,130
+2025-08-01,Delhi,WH1,Grocery,Flour,90
+2025-09-01,Delhi,WH1,Grocery,Flour,190
+2025-10-01,Delhi,WH1,Grocery,Flour,150
+2025-11-01,Delhi,WH1,Grocery,Flour,180
+2025-12-01,Delhi,WH1,Grocery,Flour,130
+2024-01-01,Mumbai,WH2,Electronics,Smartphone,140
+2024-02-01,Mumbai,WH2,Electronics,Smartphone,190
+2024-03-01,Mumbai,WH2,Electronics,Smartphone,100
+2024-04-01,Mumbai,WH2,Electronics,Smartphone,220
+2024-05-01,Mumbai,WH2,Electronics,Smartphone,170
+2024-06-01,Mumbai,WH2,Electronics,Smartphone,90
+2024-07-01,Mumbai,WH2,Electronics,Smartphone,180
+2024-08-01,Mumbai,WH2,Electronics,Smartphone,140
+2024-09-01,Mumbai,WH2,Electronics,Smartphone,230
+2024-10-01,Mumbai,WH2,Electronics,Smartphone,180
+2024-11-01,Mumbai,WH2,Electronics,Smartphone,210
+2024-12-01,Mumbai,WH2,Electronics,Smartphone,160
+2025-01-01,Mumbai,WH2,Electronics,Smartphone,140
+2025-02-01,Mumbai,WH2,Electronics,Smartphone,190
+2025-03-01,Mumbai,WH2,Electronics,Smartphone,100
+2025-04-01,Mumbai,WH2,Electronics,Smartphone,220
+2025-05-01,Mumbai,WH2,Electronics,Smartphone,170
+2025-06-01,Mumbai,WH2,Electronics,Smartphone,90
+2025-07-01,Mumbai,WH2,Electronics,Smartphone,180
+2025-08-01,Mumbai,WH2,Electronics,Smartphone,140
+2025-09-01,Mumbai,WH2,Electronics,Smartphone,230
+2025-10-01,Mumbai,WH2,Electronics,Smartphone,180
+2025-11-01,Mumbai,WH2,Electronics,Smartphone,210
+2025-12-01,Mumbai,WH2,Electronics,Smartphone,160
+2024-01-01,Mumbai,WH2,Electronics,Laptop,110
+2024-02-01,Mumbai,WH2,Electronics,Laptop,140
+2024-03-01,Mumbai,WH2,Electronics,Laptop,80
+2024-04-01,Mumbai,WH2,Electronics,Laptop,180
+2024-05-01,Mumbai,WH2,Electronics,Laptop,150
+2024-06-01,Mumbai,WH2,Electronics,Laptop,70
+2024-07-01,Mumbai,WH2,Electronics,Laptop,160
+2024-08-01,Mumbai,WH2,Electronics,Laptop,120
+2024-09-01,Mumbai,WH2,Electronics,Laptop,200
+2024-10-01,Mumbai,WH2,Electronics,Laptop,150
+2024-11-01,Mumbai,WH2,Electronics,Laptop,180
+2024-12-01,Mumbai,WH2,Electronics,Laptop,130
+2025-01-01,Mumbai,WH2,Electronics,Laptop,110
+2025-02-01,Mumbai,WH2,Electronics,Laptop,140
+2025-03-01,Mumbai,WH2,Electronics,Laptop,80
+2025-04-01,Mumbai,WH2,Electronics,Laptop,180
+2025-05-01,Mumbai,WH2,Electronics,Laptop,150
+2025-06-01,Mumbai,WH2,Electronics,Laptop,70
+2025-07-01,Mumbai,WH2,Electronics,Laptop,160
+2025-08-01,Mumbai,WH2,Electronics,Laptop,120
+2025-09-01,Mumbai,WH2,Electronics,Laptop,200
+2025-10-01,Mumbai,WH2,Electronics,Laptop,150
+2025-11-01,Mumbai,WH2,Electronics,Laptop,180
+2025-12-01,Mumbai,WH2,Electronics,Laptop,130
+2024-01-01,Mumbai,WH2,Electronics,Smartwatch,85
+2024-02-01,Mumbai,WH2,Electronics,Smartwatch,110
+2024-03-01,Mumbai,WH2,Electronics,Smartwatch,70
+2024-04-01,Mumbai,WH2,Electronics,Smartwatch,150
+2024-05-01,Mumbai,WH2,Electronics,Smartwatch,120
+2024-06-01,Mumbai,WH2,Electronics,Smartwatch,50
+2024-07-01,Mumbai,WH2,Electronics,Smartwatch,130
+2024-08-01,Mumbai,WH2,Electronics,Smartwatch,90
+2024-09-01,Mumbai,WH2,Electronics,Smartwatch,180
+2024-10-01,Mumbai,WH2,Electronics,Smartwatch,140
+2024-11-01,Mumbai,WH2,Electronics,Smartwatch,160
+2024-12-01,Mumbai,WH2,Electronics,Smartwatch,110
+2025-01-01,Mumbai,WH2,Electronics,Smartwatch,85
+2025-02-01,Mumbai,WH2,Electronics,Smartwatch,110
+2025-03-01,Mumbai,WH2,Electronics,Smartwatch,70
+2025-04-01,Mumbai,WH2,Electronics,Smartwatch,150
+2025-05-01,Mumbai,WH2,Electronics,Smartwatch,120
+2025-06-01,Mumbai,WH2,Electronics,Smartwatch,50
+2025-07-01,Mumbai,WH2,Electronics,Smartwatch,130
+2025-08-01,Mumbai,WH2,Electronics,Smartwatch,90
+2025-09-01,Mumbai,WH2,Electronics,Smartwatch,180
+2025-10-01,Mumbai,WH2,Electronics,Smartwatch,140
+2025-11-01,Mumbai,WH2,Electronics,Smartwatch,160
+2025-12-01,Mumbai,WH2,Electronics,Smartwatch,110
+2024-01-01,Mumbai,WH2,Electronics,Wireless Earbuds,95
+2024-02-01,Mumbai,WH2,Electronics,Wireless Earbuds,120
+2024-03-01,Mumbai,WH2,Electronics,Wireless Earbuds,80
+2024-04-01,Mumbai,WH2,Electronics,Wireless Earbuds,170
+2024-05-01,Mumbai,WH2,Electronics,Wireless Earbuds,140
+2024-06-01,Mumbai,WH2,Electronics,Wireless Earbuds,60
+2024-07-01,Mumbai,WH2,Electronics,Wireless Earbuds,150
+2024-08-01,Mumbai,WH2,Electronics,Wireless Earbuds,110
+2024-09-01,Mumbai,WH2,Electronics,Wireless Earbuds,200
+2024-10-01,Mumbai,WH2,Electronics,Wireless Earbuds,160
+2024-11-01,Mumbai,WH2,Electronics,Wireless Earbuds,180
+2024-12-01,Mumbai,WH2,Electronics,Wireless Earbuds,130
+2025-01-01,Mumbai,WH2,Electronics,Wireless Earbuds,95
+2025-02-01,Mumbai,WH2,Electronics,Wireless Earbuds,120
+2025-03-01,Mumbai,WH2,Electronics,Wireless Earbuds,80
+2025-04-01,Mumbai,WH2,Electronics,Wireless Earbuds,170
+2025-05-01,Mumbai,WH2,Electronics,Wireless Earbuds,140
+2025-06-01,Mumbai,WH2,Electronics,Wireless Earbuds,60
+2025-07-01,Mumbai,WH2,Electronics,Wireless Earbuds,150
+2025-08-01,Mumbai,WH2,Electronics,Wireless Earbuds,110
+2025-09-01,Mumbai,WH2,Electronics,Wireless Earbuds,200
+2025-10-01,Mumbai,WH2,Electronics,Wireless Earbuds,160
+2025-11-01,Mumbai,WH2,Electronics,Wireless Earbuds,180
+2025-12-01,Mumbai,WH2,Electronics,Wireless Earbuds,130
+2024-01-01,Mumbai,WH2,Fashion,Kurta,110
+2024-02-01,Mumbai,WH2,Fashion,Kurta,130
+2024-03-01,Mumbai,WH2,Fashion,Kurta,90
+2024-04-01,Mumbai,WH2,Fashion,Kurta,160
+2024-05-01,Mumbai,WH2,Fashion,Kurta,130
+2024-06-01,Mumbai,WH2,Fashion,Kurta,60
+2024-07-01,Mumbai,WH2,Fashion,Kurta,140
+2024-08-01,Mumbai,WH2,Fashion,Kurta,110
+2024-09-01,Mumbai,WH2,Fashion,Kurta,180
+2024-10-01,Mumbai,WH2,Fashion,Kurta,140
+2024-11-01,Mumbai,WH2,Fashion,Kurta,160
+2024-12-01,Mumbai,WH2,Fashion,Kurta,120
+2025-01-01,Mumbai,WH2,Fashion,Kurta,110
+2025-02-01,Mumbai,WH2,Fashion,Kurta,130
+2025-03-01,Mumbai,WH2,Fashion,Kurta,90
+2025-04-01,Mumbai,WH2,Fashion,Kurta,160
+2025-05-01,Mumbai,WH2,Fashion,Kurta,130
+2025-06-01,Mumbai,WH2,Fashion,Kurta,60
+2025-07-01,Mumbai,WH2,Fashion,Kurta,140
+2025-08-01,Mumbai,WH2,Fashion,Kurta,110
+2025-09-01,Mumbai,WH2,Fashion,Kurta,180
+2025-10-01,Mumbai,WH2,Fashion,Kurta,140
+2025-11-01,Mumbai,WH2,Fashion,Kurta,160
+2025-12-01,Mumbai,WH2,Fashion,Kurta,120
+2024-01-01,Mumbai,WH2,Fashion,Guava Girl Dress,65
+2024-02-01,Mumbai,WH2,Fashion,Guava Girl Dress,75
+2024-03-01,Mumbai,WH2,Fashion,Guava Girl Dress,50
+2024-04-01,Mumbai,WH2,Fashion,Guava Girl Dress,90
+2024-05-01,Mumbai,WH2,Fashion,Guava Girl Dress,70
+2024-06-01,Mumbai,WH2,Fashion,Guava Girl Dress,30
+2024-07-01,Mumbai,WH2,Fashion,Guava Girl Dress,60
+2024-08-01,Mumbai,WH2,Fashion,Guava Girl Dress,45
+2024-09-01,Mumbai,WH2,Fashion,Guava Girl Dress,100
+2024-10-01,Mumbai,WH2,Fashion,Guava Girl Dress,70
+2024-11-01,Mumbai,WH2,Fashion,Guava Girl Dress,80
+2024-12-01,Mumbai,WH2,Fashion,Guava Girl Dress,50
+2025-01-01,Mumbai,WH2,Fashion,Guava Girl Dress,65
+2025-02-01,Mumbai,WH2,Fashion,Guava Girl Dress,75
+2025-03-01,Mumbai,WH2,Fashion,Guava Girl Dress,50
+2025-04-01,Mumbai,WH2,Fashion,Guava Girl Dress,90
+2025-05-01,Mumbai,WH2,Fashion,Guava Girl Dress,70
+2025-06-01,Mumbai,WH2,Fashion,Guava Girl Dress,30
+2025-07-01,Mumbai,WH2,Fashion,Guava Girl Dress,60
+2025-08-01,Mumbai,WH2,Fashion,Guava Girl Dress,45
+2025-09-01,Mumbai,WH2,Fashion,Guava Girl Dress,100
+2025-10-01,Mumbai,WH2,Fashion,Guava Girl Dress,70
+2025-11-01,Mumbai,WH2,Fashion,Guava Girl Dress,80
+2025-12-01,Mumbai,WH2,Fashion,Guava Girl Dress,50
+2024-01-01,Mumbai,WH2,Fashion,Sneakers,130
+2024-02-01,Mumbai,WH2,Fashion,Sneakers,160
+2024-03-01,Mumbai,WH2,Fashion,Sneakers,120
+2024-04-01,Mumbai,WH2,Fashion,Sneakers,200
+2024-05-01,Mumbai,WH2,Fashion,Sneakers,170
+2024-06-01,Mumbai,WH2,Fashion,Sneakers,90
+2024-07-01,Mumbai,WH2,Fashion,Sneakers,180
+2024-08-01,Mumbai,WH2,Fashion,Sneakers,140
+2024-09-01,Mumbai,WH2,Fashion,Sneakers,220
+2024-10-01,Mumbai,WH2,Fashion,Sneakers,170
+2024-11-01,Mumbai,WH2,Fashion,Sneakers,190
+2024-12-01,Mumbai,WH2,Fashion,Sneakers,140
+2025-01-01,Mumbai,WH2,Fashion,Sneakers,130
+2025-02-01,Mumbai,WH2,Fashion,Sneakers,160
+2025-03-01,Mumbai,WH2,Fashion,Sneakers,120
+2025-04-01,Mumbai,WH2,Fashion,Sneakers,200
+2025-05-01,Mumbai,WH2,Fashion,Sneakers,170
+2025-06-01,Mumbai,WH2,Fashion,Sneakers,90
+2025-07-01,Mumbai,WH2,Fashion,Sneakers,180
+2025-08-01,Mumbai,WH2,Fashion,Sneakers,140
+2025-09-01,Mumbai,WH2,Fashion,Sneakers,220
+2025-10-01,Mumbai,WH2,Fashion,Sneakers,170
+2025-11-01,Mumbai,WH2,Fashion,Sneakers,190
+2025-12-01,Mumbai,WH2,Fashion,Sneakers,140
+2024-01-01,Mumbai,WH2,Fashion,T-Shirts,180
+2024-02-01,Mumbai,WH2,Fashion,T-Shirts,210
+2024-03-01,Mumbai,WH2,Fashion,T-Shirts,160
+2025-01-01,Mumbai,WH2,Fashion,T-Shirts,180
+2025-01-01,Mumbai,WH2,Grocery,Rice,230
+2025-01-01,Mumbai,WH2,Grocery,Flour,150
+2025-01-01,Bangalore,WH3,Electronics,Smartphone,110
+2025-01-01,Bangalore,WH3,Electronics,Laptop,70
+2025-01-01,Bangalore,WH3,Electronics,Smartwatch,50
+2025-01-01,Bangalore,WH3,Electronics,Wireless Earbuds,60
+2025-01-01,Bangalore,WH3,Fashion,Kurta,80
+2025-01-01,Bangalore,WH3,Fashion,Guava Girl Dress,30
+2025-01-01,Bangalore,WH3,Fashion,Sneakers,90
+2025-01-01,Bangalore,WH3,Fashion,T-Shirts,130
+2025-01-01,Bangalore,WH3,Grocery,Rice,180
+2025-01-01,Bangalore,WH3,Grocery,Flour,100
+2025-01-01,Chennai,WH4,Electronics,Smartphone,100
+2025-01-01,Chennai,WH4,Electronics,Laptop,60
+2025-01-01,Chennai,WH4,Electronics,Smartwatch,40
+2025-01-01,Chennai,WH4,Electronics,Wireless Earbuds,50
+2025-01-01,Chennai,WH4,Fashion,Kurta,70
+2025-01-01,Chennai,WH4,Fashion,Guava Girl Dress,20
+2025-01-01,Chennai,WH4,Fashion,Sneakers,80
+2025-01-01,Chennai,WH4,Fashion,T-Shirts,110
+2025-01-01,Chennai,WH4,Grocery,Rice,150
+2025-01-01,Chennai,WH4,Grocery,Flour,80
+2025-01-01,Hyderabad,WH5,Electronics,Smartphone,95
+2025-01-01,Hyderabad,WH5,Electronics,Laptop,55
+2025-01-01,Hyderabad,WH5,Electronics,Smartwatch,35
+2025-01-01,Hyderabad,WH5,Electronics,Wireless Earbuds,45
+2025-01-01,Hyderabad,WH5,Fashion,Kurta,60
+2025-01-01,Hyderabad,WH5,Fashion,Guava Girl Dress,15
+2025-01-01,Hyderabad,WH5,Fashion,Sneakers,70
+2025-01-01,Hyderabad,WH5,Fashion,T-Shirts,100
+2025-01-01,Hyderabad,WH5,Grocery,Rice,120
+2025-01-01,Hyderabad,WH5,Grocery,Flour,60
+2025-01-01,Kolkata,WH6,Electronics,Smartphone,80
+2025-01-01,Kolkata,WH6,Electronics,Laptop,40
+2025-01-01,Kolkata,WH6,Electronics,Smartwatch,20
+2025-01-01,Kolkata,WH6,Electronics,Wireless Earbuds,30
+2025-01-01,Kolkata,WH6,Fashion,Kurta,40
+2025-01-01,Kolkata,WH6,Fashion,Guava Girl Dress,5
+2025-01-01,Kolkata,WH6,Fashion,Sneakers,50
+2025-01-01,Kolkata,WH6,Fashion,T-Shirts,60
+2025-01-01,Kolkata,WH6,Grocery,Rice,80
+2025-01-01,Kolkata,WH6,Grocery,Flour,40
+2025-01-01,Pune,WH7,Electronics,Smartphone,70
+2025-01-01,Pune,WH7,Electronics,Laptop,30
+2025-01-01,Pune,WH7,Electronics,Smartwatch,10
+2025-01-01,Pune,WH7,Electronics,Wireless Earbuds,20
+2025-01-01,Pune,WH7,Fashion,Kurta,20
+2025-01-01,Pune,WH7,Fashion,Guava Girl Dress,2
+2025-01-01,Pune,WH7,Fashion,Sneakers,10
+2025-01-01,Pune,WH7,Fashion,T-Shirts,30
+2025-01-01,Pune,WH7,Grocery,Rice,20
+2025-01-01,Pune,WH7,Grocery,Flour,5
+2025-01-01,Lucknow,WH10,Electronics,Smartphone,50
+2025-01-01,Lucknow,WH10,Electronics,Laptop,10
+2025-01-01,Lucknow,WH10,Electronics,Smartwatch,5
+2025-01-01,Lucknow,WH10,Electronics,Wireless Earbuds,15
+2025-01-01,Lucknow,WH10,Fashion,Kurta,40
+2025-01-01,Lucknow,WH10,Fashion,Guava Girl Dress,5
+2025-01-01,Lucknow,WH10,Fashion,Sneakers,40
+2025-01-01,Lucknow,WH10,Fashion,T-Shirts,50
+2025-01-01,Lucknow,WH10,Grocery,Rice,80
+2025-01-01,Lucknow,WH10,Grocery,Flour,30
+2025-02-01,Lucknow,WH10,Electronics,Smartphone,60
+2025-02-01,Lucknow,WH10,Electronics,Laptop,20
+2025-02-01,Lucknow,WH10,Electronics,Smartwatch,10
+2025-02-01,Lucknow,WH10,Electronics,Wireless Earbuds,25
+2025-02-01,Lucknow,WH10,Fashion,Kurta,50
+2025-02-01,Lucknow,WH10,Fashion,Guava Girl Dress,10
+2025-02-01,Lucknow,WH10,Fashion,Sneakers,40
+2025-02-01,Lucknow,WH10,Fashion,T-Shirts,50
+2025-02-01,Lucknow,WH10,Grocery,Rice,80
+2025-02-01,Lucknow,WH10,Grocery,Flour,30
+2025-03-01,Lucknow,WH10,Electronics,Smartphone,70
+2025-03-01,Lucknow,WH10,Electronics,Laptop,30
+2025-03-01,Lucknow,WH10,Electronics,Smartwatch,15
+2025-03-01,Lucknow,WH10,Electronics,Wireless Earbuds,25
+2025-03-01,Lucknow,WH10,Fashion,Kurta,60
+2025-03-01,Lucknow,WH10,Fashion,Guava Girl Dress,10
+2025-03-01,Lucknow,WH10,Fashion,Sneakers,40
+2025-03-01,Lucknow,WH10,Fashion,T-Shirts,50
+2025-03-01,Lucknow,WH10,Grocery,Rice,80
+2025-03-01,Lucknow,WH10,Grocery,Flour,30
+2025-01-01,Kanpur,WH11,Electronics,Smartphone,40
+2025-01-01,Kanpur,WH11,Electronics,Laptop,10
+2025-01-01,Kanpur,WH11,Electronics,Smartwatch,5
+2025-01-01,Kanpur,WH11,Electronics,Wireless Earbuds,15
+2025-01-01,Kanpur,WH11,Fashion,Kurta,30
+2025-01-01,Kanpur,WH11,Fashion,Guava Girl Dress,2
+2025-01-01,Kanpur,WH11,Fashion,Sneakers,30
+2025-01-01,Kanpur,WH11,Fashion,T-Shirts,40
+2025-01-01,Kanpur,WH11,Grocery,Rice,60
+2025-01-01,Kanpur,WH11,Grocery,Flour,20
+2025-02-01,Kanpur,WH11,Electronics,Smartphone,50
+2025-02-01,Kanpur,WH11,Electronics,Laptop,20
+2025-02-01,Kanpur,WH11,Electronics,Smartwatch,10
+2025-02-01,Kanpur,WH11,Electronics,Wireless Earbuds,25
+2025-02-01,Kanpur,WH11,Fashion,Kurta,40
+2025-02-01,Kanpur,WH11,Fashion,Guava Girl Dress,10
+2025-02-01,Kanpur,WH11,Fashion,Sneakers,30
+2025-02-01,Kanpur,WH11,Fashion,T-Shirts,40
+2025-02-01,Kanpur,WH11,Grocery,Rice,60
+2025-02-01,Kanpur,WH11,Grocery,Flour,20
+2025-03-01,Kanpur,WH11,Electronics,Smartphone,60
+2025-03-01,Kanpur,WH11,Electronics,Laptop,20
+2025-03-01,Kanpur,WH11,Electronics,Smartwatch,10
+2025-03-01,Kanpur,WH11,Electronics,Wireless Earbuds,25
+2025-03-01,Kanpur,WH11,Fashion,Kurta,40
+2025-03-01,Kanpur,WH11,Fashion,Guava Girl Dress,10
+2025-03-01,Kanpur,WH11,Fashion,Sneakers,30
+2025-03-01,Kanpur,WH11,Fashion,T-Shirts,40
+2025-03-01,Kanpur,WH11,Grocery,Rice,60
+2025-03-01,Kanpur,WH11,Grocery,Flour,20
+2025-01-01,Nagpur,WH12,Electronics,Smartphone,30
+2025-01-01,Nagpur,WH12,Electronics,Laptop,5
+2025-01-01,Nagpur,WH12,Electronics,Smartwatch,2
+2025-01-01,Nagpur,WH12,Electronics,Wireless Earbuds,10
+2025-01-01,Nagpur,WH12,Fashion,Kurta,20
+2025-01-01,Nagpur,WH12,Fashion,Guava Girl Dress,1
+2025-01-01,Nagpur,WH12,Fashion,Sneakers,20
+2025-01-01,Nagpur,WH12,Fashion,T-Shirts,30
+2025-01-01,Nagpur,WH12,Grocery,Rice,40
+2025-01-01,Nagpur,WH12,Grocery,Flour,10
+2025-02-01,Nagpur,WH12,Electronics,Smartphone,40
+2025-02-01,Nagpur,WH12,Electronics,Laptop,10
+2025-02-01,Nagpur,WH12,Electronics,Smartwatch,5
+2025-02-01,Nagpur,WH12,Electronics,Wireless Earbuds,20
+2025-02-01,Nagpur,WH12,Fashion,Kurta,30
+2025-02-01,Nagpur,WH12,Fashion,Guava Girl Dress,1
+2025-02-01,Nagpur,WH12,Fashion,Sneakers,20
+2025-02-01,Nagpur,WH12,Fashion,T-Shirts,30
+2025-02-01,Nagpur,WH12,Grocery,Rice,40
+2025-02-01,Nagpur,WH12,Grocery,Flour,10
+2025-03-01,Nagpur,WH12,Electronics,Smartphone,50
+2025-03-01,Nagpur,WH12,Electronics,Laptop,10
+2025-03-01,Nagpur,WH12,Electronics,Smartwatch,5
+2025-03-01,Nagpur,WH12,Electronics,Wireless Earbuds,20
+2025-03-01,Nagpur,WH12,Fashion,Kurta,30
+2025-03-01,Nagpur,WH12,Fashion,Guava Girl Dress,1
+2025-03-01,Nagpur,WH12,Fashion,Sneakers,20
+2025-03-01,Nagpur,WH12,Fashion,T-Shirts,30
+2025-03-01,Nagpur,WH12,Grocery,Rice,40
+2025-03-01,Nagpur,WH12,Grocery,Flour,10
+2025-01-01,Indore,WH13,Electronics,Smartphone,20
+2025-01-01,Indore,WH13,Electronics,Laptop,5
+2025-01-01,Indore,WH13,Electronics,Smartwatch,2
+2025-01-01,Indore,WH13,Electronics,Wireless Earbuds,10
+2025-01-01,Indore,WH13,Fashion,Kurta,10
+2025-01-01,Indore,WH13,Fashion,Guava Girl Dress,1
+2025-01-01,Indore,WH13,Fashion,Sneakers,10
+2025-01-01,Indore,WH13,Fashion,T-Shirts,20
+2025-01-01,Indore,WH13,Grocery,Rice,20
+2025-01-01,Indore,WH13,Grocery,Flour,5
+2025-02-01,Indore,WH13,Electronics,Smartphone,30
+2025-02-01,Indore,WH13,Electronics,Laptop,10
+2025-02-01,Indore,WH13,Electronics,Smartwatch,5
+2025-02-01,Indore,WH13,Electronics,Wireless Earbuds,20
+2025-02-01,Indore,WH13,Fashion,Kurta,20
+2025-02-01,Indore,WH13,Fashion,Guava Girl Dress,1
+2025-02-01,Indore,WH13,Fashion,Sneakers,10
+2025-02-01,Indore,WH13,Fashion,T-Shirts,20
+2025-02-01,Indore,WH13,Grocery,Rice,20
+2025-02-01,Indore,WH13,Grocery,Flour,5
+2025-03-01,Indore,WH13,Electronics,Smartphone,40
+2025-03-01,Indore,WH13,Electronics,Laptop,5
+2025-03-01,Indore,WH13,Electronics,Smartwatch,2
+2025-03-01,Indore,WH13,Electronics,Wireless Earbuds,10
+2025-03-01,Indore,WH13,Fashion,Kurta,20
+2025-03-01,Indore,WH13,Fashion,Guava Girl Dress,1
+2025-03-01,Indore,WH13,Fashion,Sneakers,10
+2025-03-01,Indore,WH13,Fashion,T-Shirts,20
+2025-03-01,Indore,WH13,Grocery,Rice,20
+2025-03-01,Indore,WH13,Grocery,Flour,5
+2025-01-01,Ahmedabad,WH8,Electronics,Smartphone,60
+2025-01-01,Ahmedabad,WH8,Electronics,Laptop,30
+2025-01-01,Ahmedabad,WH8,Electronics,Smartwatch,15
+2025-01-01,Ahmedabad,WH8,Electronics,Wireless Earbuds,25
+2025-01-01,Ahmedabad,WH8,Fashion,Kurta,40
+2025-01-01,Ahmedabad,WH8,Fashion,Guava Girl Dress,10
+2025-01-01,Ahmedabad,WH8,Fashion,Sneakers,40
+2025-01-01,Ahmedabad,WH8,Fashion,T-Shirts,60
+2025-01-01,Ahmedabad,WH8,Grocery,Rice,80
+2025-01-01,Ahmedabad,WH8,Grocery,Flour,30
+2025-02-01,Ahmedabad,WH8,Electronics,Smartphone,70
+2025-02-01,Ahmedabad,WH8,Electronics,Laptop,40
+2025-02-01,Ahmedabad,WH8,Electronics,Smartwatch,20
+2025-02-01,Ahmedabad,WH8,Electronics,Wireless Earbuds,35
+2025-02-01,Ahmedabad,WH8,Fashion,Kurta,50
+2025-02-01,Ahmedabad,WH8,Fashion,Guava Girl Dress,15
+2025-02-01,Ahmedabad,WH8,Fashion,Sneakers,50
+2025-02-01,Ahmedabad,WH8,Fashion,T-Shirts,70
+2025-02-01,Ahmedabad,WH8,Grocery,Rice,90
+2025-02-01,Ahmedabad,WH8,Grocery,Flour,40
+2025-03-01,Ahmedabad,WH8,Electronics,Smartphone,80
+2025-03-01,Ahmedabad,WH8,Electronics,Laptop,50
+2025-03-01,Ahmedabad,WH8,Electronics,Smartwatch,25
+2025-03-01,Ahmedabad,WH8,Electronics,Wireless Earbuds,45
+2025-03-01,Ahmedabad,WH8,Fashion,Kurta,60
+2025-03-01,Ahmedabad,WH8,Fashion,Guava Girl Dress,20
+2025-03-01,Ahmedabad,WH8,Fashion,Sneakers,60
+2025-03-01,Ahmedabad,WH8,Fashion,T-Shirts,80
+2025-03-01,Ahmedabad,WH8,Grocery,Rice,100
+2025-03-01,Ahmedabad,WH8,Grocery,Flour,50
+2025-01-01,Jaipur,WH9,Electronics,Smartphone,50
+2025-01-01,Jaipur,WH9,Electronics,Laptop,20
+2025-01-01,Jaipur,WH9,Electronics,Smartwatch,10
+2025-01-01,Jaipur,WH9,Electronics,Wireless Earbuds,20
+2025-01-01,Jaipur,WH9,Fashion,Guava Girl Dress,5
+2025-01-01,Jaipur,WH9,Fashion,Kurta,30
+2025-01-01,Jaipur,WH9,Fashion,Sneakers,20
+2025-01-01,Jaipur,WH9,Fashion,T-Shirts,40
+2025-01-01,Jaipur,WH9,Grocery,Rice,60
+2025-01-01,Jaipur,WH9,Grocery,Flour,20
+2025-02-01,Jaipur,WH9,Electronics,Smartphone,60
+2025-02-01,Jaipur,WH9,Electronics,Laptop,30
+2025-02-01,Jaipur,WH9,Electronics,Smartwatch,15
+2025-02-01,Jaipur,WH9,Electronics,Wireless Earbuds,30
+2025-02-01,Jaipur,WH9,Fashion,Guava Girl Dress,10
+2025-02-01,Jaipur,WH9,Fashion,Kurta,40
+2025-02-01,Jaipur,WH9,Fashion,Sneakers,30
+2025-02-01,Jaipur,WH9,Fashion,T-Shirts,50
+2025-02-01,Jaipur,WH9,Grocery,Rice,70
+2025-02-01,Jaipur,WH9,Grocery,Flour,30
+2025-03-01,Jaipur,WH9,Electronics,Smartphone,70
+2025-03-01,Jaipur,WH9,Electronics,Laptop,40
+2025-03-01,Jaipur,WH9,Electronics,Smartwatch,20
+2025-03-01,Jaipur,WH9,Electronics,Wireless Earbuds,40
+2025-03-01,Jaipur,WH9,Fashion,Guava Girl Dress,15
+2025-03-01,Jaipur,WH9,Fashion,Kurta,50
+2025-03-01,Jaipur,WH9,Fashion,Sneakers,40
+2025-03-01,Jaipur,WH9,Fashion,T-Shirts,60
+2025-03-01,Jaipur,WH9,Grocery,Rice,80
+2025-03-01,Jaipur,WH9,Grocery,Flour,40

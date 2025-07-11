@@ -1,0 +1,131 @@
+product,warehouse,region,category,stock
+Smartphone,WH1,Delhi,Electronics,500
+Laptop,WH1,Delhi,Electronics,300
+Smartwatch,WH1,Delhi,Electronics,200
+Wireless Earbuds,WH1,Delhi,Electronics,250
+Kurta,WH1,Delhi,Fashion,350
+Guava Girl Dress,WH1,Delhi,Fashion,150
+Sneakers,WH1,Delhi,Fashion,400
+T-Shirts,WH1,Delhi,Fashion,600
+Rice,WH1,Delhi,Grocery,1200
+Flour,WH1,Delhi,Grocery,700
+Smartphone,WH2,Mumbai,Electronics,600
+Laptop,WH2,Mumbai,Electronics,350
+Smartwatch,WH2,Mumbai,Electronics,250
+Wireless Earbuds,WH2,Mumbai,Electronics,300
+Kurta,WH2,Mumbai,Fashion,400
+Guava Girl Dress,WH2,Mumbai,Fashion,200
+Sneakers,WH2,Mumbai,Fashion,450
+T-Shirts,WH2,Mumbai,Fashion,700
+Rice,WH2,Mumbai,Grocery,1400
+Flour,WH2,Mumbai,Grocery,800
+Smartphone,WH3,Bangalore,Electronics,450
+Laptop,WH3,Bangalore,Electronics,250
+Smartwatch,WH3,Bangalore,Electronics,150
+Wireless Earbuds,WH3,Bangalore,Electronics,200
+Kurta,WH3,Bangalore,Fashion,300
+Guava Girl Dress,WH3,Bangalore,Fashion,100
+Sneakers,WH3,Bangalore,Fashion,350
+T-Shirts,WH3,Bangalore,Fashion,500
+Rice,WH3,Bangalore,Grocery,1000
+Flour,WH3,Bangalore,Grocery,600
+Smartphone,WH4,Chennai,Electronics,400
+Laptop,WH4,Chennai,Electronics,200
+Smartwatch,WH4,Chennai,Electronics,100
+Wireless Earbuds,WH4,Chennai,Electronics,150
+Kurta,WH4,Chennai,Fashion,250
+Guava Girl Dress,WH4,Chennai,Fashion,80
+Sneakers,WH4,Chennai,Fashion,300
+T-Shirts,WH4,Chennai,Fashion,400
+Rice,WH4,Chennai,Grocery,800
+Flour,WH4,Chennai,Grocery,500
+Smartphone,WH5,Hyderabad,Electronics,350
+Laptop,WH5,Hyderabad,Electronics,150
+Smartwatch,WH5,Hyderabad,Electronics,80
+Wireless Earbuds,WH5,Hyderabad,Electronics,100
+Kurta,WH5,Hyderabad,Fashion,200
+Guava Girl Dress,WH5,Hyderabad,Fashion,60
+Sneakers,WH5,Hyderabad,Fashion,250
+T-Shirts,WH5,Hyderabad,Fashion,350
+Rice,WH5,Hyderabad,Grocery,700
+Flour,WH5,Hyderabad,Grocery,400
+Smartphone,WH6,Kolkata,Electronics,300
+Laptop,WH6,Kolkata,Electronics,100
+Smartwatch,WH6,Kolkata,Electronics,60
+Wireless Earbuds,WH6,Kolkata,Electronics,100
+Kurta,WH6,Kolkata,Fashion,150
+Guava Girl Dress,WH6,Kolkata,Fashion,40
+Sneakers,WH6,Kolkata,Fashion,150
+T-Shirts,WH6,Kolkata,Fashion,250
+Rice,WH6,Kolkata,Grocery,600
+Flour,WH6,Kolkata,Grocery,300
+Smartphone,WH7,Pune,Electronics,200
+Laptop,WH7,Pune,Electronics,80
+Smartwatch,WH7,Pune,Electronics,40
+Wireless Earbuds,WH7,Pune,Electronics,60
+Kurta,WH7,Pune,Fashion,100
+Guava Girl Dress,WH7,Pune,Fashion,20
+Sneakers,WH7,Pune,Fashion,80
+T-Shirts,WH7,Pune,Fashion,150
+Rice,WH7,Pune,Grocery,400
+Flour,WH7,Pune,Grocery,150
+Smartphone,WH8,Ahmedabad,Electronics,200
+Laptop,WH8,Ahmedabad,Electronics,100
+Smartwatch,WH8,Ahmedabad,Electronics,60
+Wireless Earbuds,WH8,Ahmedabad,Electronics,100
+Kurta,WH8,Ahmedabad,Fashion,150
+Guava Girl Dress,WH8,Ahmedabad,Fashion,40
+Sneakers,WH8,Ahmedabad,Fashion,150
+T-Shirts,WH8,Ahmedabad,Fashion,250
+Rice,WH8,Ahmedabad,Grocery,600
+Flour,WH8,Ahmedabad,Grocery,300
+Smartphone,WH9,Jaipur,Electronics,150
+Laptop,WH9,Jaipur,Electronics,70
+Smartwatch,WH9,Jaipur,Electronics,40
+Wireless Earbuds,WH9,Jaipur,Electronics,70
+Kurta,WH9,Jaipur,Fashion,120
+Guava Girl Dress,WH9,Jaipur,Fashion,30
+Sneakers,WH9,Jaipur,Fashion,100
+T-Shirts,WH9,Jaipur,Fashion,200
+Rice,WH9,Jaipur,Grocery,500
+Flour,WH9,Jaipur,Grocery,200
+Smartphone,WH10,Lucknow,Electronics,100
+Laptop,WH10,Lucknow,Electronics,40
+Smartwatch,WH10,Lucknow,Electronics,30
+Wireless Earbuds,WH10,Lucknow,Electronics,50
+Kurta,WH10,Lucknow,Fashion,80
+Guava Girl Dress,WH10,Lucknow,Fashion,20
+Sneakers,WH10,Lucknow,Fashion,70
+T-Shirts,WH10,Lucknow,Fashion,150
+Rice,WH10,Lucknow,Grocery,400
+Flour,WH10,Lucknow,Grocery,150
+Smartphone,WH11,Kanpur,Electronics,80
+Laptop,WH11,Kanpur,Electronics,30
+Smartwatch,WH11,Kanpur,Electronics,20
+Wireless Earbuds,WH11,Kanpur,Electronics,30
+Kurta,WH11,Kanpur,Fashion,40
+Guava Girl Dress,WH11,Kanpur,Fashion,10
+Sneakers,WH11,Kanpur,Fashion,50
+T-Shirts,WH11,Kanpur,Fashion,100
+Rice,WH11,Kanpur,Grocery,300
+Flour,WH11,Kanpur,Grocery,100
+Smartphone,WH12,Nagpur,Electronics,60
+Laptop,WH12,Nagpur,Electronics,20
+Smartwatch,WH12,Nagpur,Electronics,10
+Wireless Earbuds,WH12,Nagpur,Electronics,20
+Kurta,WH12,Nagpur,Fashion,20
+Guava Girl Dress,WH12,Nagpur,Fashion,5
+Sneakers,WH12,Nagpur,Fashion,20
+T-Shirts,WH12,Nagpur,Fashion,50
+Rice,WH12,Nagpur,Grocery,150
+Flour,WH12,Nagpur,Grocery,50
+Smartphone,WH13,Indore,Electronics,40
+Laptop,WH13,Indore,Electronics,15
+Smartwatch,WH13,Indore,Electronics,10
+Wireless Earbuds,WH13,Indore,Electronics,20
+Kurta,WH13,Indore,Fashion,10
+Guava Girl Dress,WH13,Indore,Fashion,2
+Sneakers,WH13,Indore,Fashion,10
+T-Shirts,WH13,Indore,Fashion,30
+Rice,WH13,Indore,Grocery,100
+Flour,WH13,Indore,Grocery,30

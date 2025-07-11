@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Supply Planner</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+  <nav class="bg-blue-800 p-4 text-white flex justify-between items-center">
+    <div class="text-xl font-bold">📦 SupplyChainPro</div>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:text-blue-200">Map</a>
+      <a href="planner.html" class="hover:text-blue-200">Planner</a>
+      <a href="social.html" class="hover:text-blue-200">Social Pulse</a>
+      <a href="insights.html" class="hover:text-blue-200">Insights</a>
+    </div>
+  </nav>
+  <div class="container mx-auto mt-6 space-y-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <select id="region" class="p-2 border rounded">
+        <option value="">All Regions</option>
+        <option>Delhi</option>
+        <option>Bangalore</option>
+        <option>Mumbai</option>
+      </select>
+      <select id="warehouse" class="p-2 border rounded">
+        <option value="">All Warehouses</option>
+        <option>WH1</option>
+        <option>WH2</option>
+        <option>WH3</option>
+      </select>
+      <select id="category" class="p-2 border rounded">
+        <option value="">All Categories</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+        <option>Grocery</option>
+      </select>
+      <input type="number" id="timeframe" placeholder="Forecast Days" value="30" class="p-2 border rounded" />
+    </div>
+    <button onclick="loadPlanner()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+      Get Forecast Plan
+    </button>
+    <div class="overflow-auto shadow rounded">
+      <table class="min-w-full table-auto mt-4 bg-white border border-gray-200 text-sm text-left">
+        <thead class="bg-blue-100">
+          <tr>
+            <th class="px-4 py-2">Product</th>
+            <th class="px-4 py-2">Current Stock</th>
+            <th class="px-4 py-2">Forecast Demand</th>
+            <th class="px-4 py-2">Show Forecast</th>
+            <th class="px-4 py-2">Stock Lasts Till</th>
+            <th class="px-4 py-2">Inventory Status</th>
+          </tr>
+        </thead>
+        <tbody id="planner-body" class="divide-y divide-gray-100">
+          <!-- rows injected dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manual Entry</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+  <nav class="bg-blue-800 p-4 text-white flex justify-between items-center">
+    <div class="text-xl font-bold">📦 SupplyChainPro</div>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:text-blue-200">Map</a>
+      <a href="planner.html" class="hover:text-blue-200">Planner</a>
+      <a href="social.html" class="hover:text-blue-200">Social Pulse</a>
+      <a href="insights.html" class="hover:text-blue-200">Insights</a>
+    </div>
+  </nav>
+  <div class="container mx-auto mt-8">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded shadow">
+        <h2 class="text-lg font-semibold mb-4">Manual Inventory Update</h2>
+        <form id="inventory-form" class="space-y-4">
+          <input type="text" placeholder="Product" class="p-2 border rounded w-full" required />
+          <input type="text" placeholder="Warehouse" class="p-2 border rounded w-full" required />
+          <input type="text" placeholder="Region" class="p-2 border rounded w-full" required />
+          <input type="text" placeholder="Category" class="p-2 border rounded w-full" required />
+          <input type="number" placeholder="Stock" class="p-2 border rounded w-full" required />
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Submit</button>
+        </form>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h2 class="text-lg font-semibold mb-4">Manual Social Trend Entry</h2>
+        <form id="trend-form" class="space-y-4">
+          <input type="text" placeholder="Product" class="p-2 border rounded w-full" required />
+          <input type="text" placeholder="Category" class="p-2 border rounded w-full" required />
+          <input type="number" placeholder="Score" class="p-2 border rounded w-full" required />
+          <input type="text" placeholder="Source" class="p-2 border rounded w-full" required />
+          <input type="date" class="p-2 border rounded w-full" required />
+          <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/manual.js"></script>
+</body>
+</html>

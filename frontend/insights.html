@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inventory Insights</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100">
+  <nav class="bg-green-800 p-4 text-white flex justify-between items-center">
+    <div class="text-xl font-bold">📦 SupplyChainPro</div>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:text-green-200">Map</a>
+      <a href="planner.html" class="hover:text-green-200">Planner</a>
+      <a href="social.html" class="hover:text-green-200">Social Pulse</a>
+      <a href="insights.html" class="hover:text-green-200">Insights</a>
+    </div>
+  </nav>
+  <div class="container mx-auto mt-6 space-y-6">
+    <div class="flex flex-wrap gap-4 mb-4 items-center">
+      <label for="region" class="font-medium">Region:</label>
+      <select id="region" class="p-2 border rounded">
+        <option value="">All</option>
+        <option>Delhi</option>
+        <option>Bangalore</option>
+        <option>Mumbai</option>
+        <option>Chennai</option>
+        <option>Hyderabad</option>
+        <option>Kolkata</option>
+        <option>Pune</option>
+        <option>Ahmedabad</option>
+        <option>Jaipur</option>
+        <option>Lucknow</option>
+        <option>Kanpur</option>
+        <option>Nagpur</option>
+        <option>Indore</option>
+      </select>
+      <label for="category" class="font-medium">Category:</label>
+      <select id="category" class="p-2 border rounded">
+        <option value="">All</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+        <option>Grocery</option>
+      </select>
+      <label for="warehouse" class="font-medium">Warehouse:</label>
+      <select id="warehouse" class="p-2 border rounded">
+        <option value="">All</option>
+        <option>WH1</option>
+        <option>WH2</option>
+        <option>WH3</option>
+        <option>WH4</option>
+        <option>WH5</option>
+        <option>WH6</option>
+        <option>WH7</option>
+        <option>WH8</option>
+        <option>WH9</option>
+        <option>WH10</option>
+        <option>WH11</option>
+        <option>WH12</option>
+        <option>WH13</option>
+      </select>
+      <button onclick="loadInsights()" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Show Insights</button>
+    </div>
+    <div id="summary" class="grid md:grid-cols-3 gap-6 text-white font-bold">
+      <div class="bg-green-500 p-6 rounded shadow text-center">
+        <h2>Total Sales</h2>
+        <p id="total-sales" class="text-3xl mt-2">₹0</p>
+      </div>
+      <div class="bg-yellow-500 p-6 rounded shadow text-center">
+        <h2>Inventory Items</h2>
+        <p id="total-inventory" class="text-3xl mt-2">0</p>
+      </div>
+      <div class="bg-blue-500 p-6 rounded shadow text-center">
+        <h2>Trending Products</h2>
+        <p id="trend-count" class="text-3xl mt-2">0</p>
+      </div>
+    </div>
+    <div class="bg-white p-6 rounded shadow" id="section-inventory-product">
+      <h2 class="text-lg font-semibold mb-4">Inventory by Product</h2>
+      <canvas id="inventory-chart" height="120"></canvas>
+    </div>
+    <div class="bg-white p-6 rounded shadow" id="section-inventory-region">
+      <h2 class="text-lg font-semibold mb-4">Inventory by Region</h2>
+      <canvas id="inventory-region-chart" height="120"></canvas>
+    </div>
+    <div class="bg-white p-6 rounded shadow" id="section-inventory-category">
+      <h2 class="text-lg font-semibold mb-4">Inventory by Category</h2>
+      <canvas id="inventory-category-chart" height="120"></canvas>
+    </div>
+    <div class="bg-white p-6 rounded shadow" id="section-inventory-warehouse">
+      <h2 class="text-lg font-semibold mb-4">Inventory by Warehouse</h2>
+      <canvas id="inventory-warehouse-chart" height="120"></canvas>
+    </div>
+    <div class="bg-white p-6 rounded shadow overflow-x-auto" id="section-sales-region">
+      <h2 class="text-lg font-semibold mb-4">Sales by Region</h2>
+      <table id="sales-region-table" class="min-w-full text-sm text-left">
+        <thead><tr><th>Region</th><th>Product</th><th>Sales</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="bg-white p-6 rounded shadow overflow-x-auto" id="section-sales-category">
+      <h2 class="text-lg font-semibold mb-4">Sales by Category</h2>
+      <table id="sales-category-table" class="min-w-full text-sm text-left">
+        <thead><tr><th>Category</th><th>Product</th><th>Sales</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="bg-white p-6 rounded shadow" id="section-sales-time">
+      <h2 class="text-lg font-semibold mb-4">Sales Time Series (Monthly)</h2>
+      <canvas id="sales-time-chart" height="120"></canvas>
+    </div>
+  </div>
+  <script src="js/insights.js"></script>
+</body>
+</html>
