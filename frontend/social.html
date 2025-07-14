@@ -3,92 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <title>Social Pulse</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
   <style>
-    .pulse-card { background: #fff; color: #222; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-radius: 1rem; }
-    .pulse-section { background: #f9fafb; border-radius: 1rem; box-shadow: 0 1px 6px rgba(0,0,0,0.04); padding: 2rem 1.5rem; margin-bottom: 2rem; }
-    .dark .pulse-card { background: #1e293b; color: #f1f5f9; }
-    .dark .pulse-section { background: #0f172a; }
-    .dark body { background: #0f172a; }
-    .dark .pulse-recommend { background: #1e293b; color: #fbbf24; }
-    .toggle-dark { cursor: pointer; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--text-primary);
+    }
+    .pulse-card, .pulse-section {
+      background: var(--sidebar-nav-bg);
+      color: var(--text-primary);
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .pulse-title {
+      color: var(--primary-accent);
+      font-weight: 600;
+    }
+    .pulse-recommend {
+      background: var(--sidebar-nav-bg);
+      color: var(--secondary-accent);
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+    .sidebar-nav a.active {
+      background-color: var(--primary-accent);
+      color: white;
+      font-weight: 600;
+    }
+    .main-content {
+      height: 100%;
+      overflow-y: auto;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+    .pulse-section {
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .pulse-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    @media (max-width: 900px) {
+      .pulse-grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+    /* --- UI Fixes for Headings and Select Arrow --- */
+    .pulse-card { padding-top: 0 !important; }
+    .pulse-title { margin: 0 0 10px 16px !important; font-weight: 600 !important; font-size: 1.15rem !important; align-self: flex-start !important; }
+    /* Custom select arrow */
+    #source.form-select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: var(--background);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      padding-right: 32px !important;
+      width: 180px;
+      background-image: url('data:image/svg+xml;utf8,<svg fill="%23C1B9A0" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 7.293a1 1 0 011.414 0L10 8.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 20px 20px;
+    }
   </style>
 </head>
-<body class="bg-gray-50 min-h-screen transition-colors duration-300">
-  <!-- This is the NEW navigation bar. Replace the old one in all files. -->
-<nav class="bg-gray-900 p-4 text-white flex justify-between items-center shadow-lg">
-    <div class="text-xl font-bold tracking-wider" style="color: #50FFB1;">MarketRadarPro</div>
-    <div class="space-x-6">
-        <a href="market_radar.html" class="hover:text-green-300">MarketRadar</a>
-        <a href="planner.html" class="hover:text-green-300">Planner</a>
-        <a href="social.html" class="hover:text-green-300">Social Pulse</a>
-        <a href="insights.html" class="hover:text-green-300">Insights</a>
-    </div>
-</nav>
-  <div class="container mx-auto mt-8 space-y-8">
-    <div class="flex flex-wrap gap-4 justify-center">
-      <select id="source" class="p-3 border rounded shadow bg-white dark:bg-slate-800 dark:text-white">
-        <option value="pytrends">PyTrends</option>
-        <option value="twitter">Twitter</option>
-        <option value="instagram">Instagram</option>
-      </select>
-      <input type="number" id="days" class="p-3 border rounded shadow bg-white dark:bg-slate-800 dark:text-white" placeholder="Last N days" value="7" />
-      <button id="load-social-btn" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-bold shadow hover:scale-105 transition">Load Social Trends</button>
-    </div>
-    <div class="grid md:grid-cols-3 gap-6 text-white font-bold">
-      <div class="pulse-card p-6 flex flex-col items-center">
-        <div class="text-2xl mb-2">🔥</div>
-        <div class="text-sm uppercase tracking-wider">Most Popular Product</div>
-        <div id="most-popular" class="text-2xl mt-2">-</div>
+<body style="background-color: var(--background); color: var(--text-primary); min-height: 100vh; height: 100%;">
+  <header class="top-nav">
+    <div class="top-nav-title">OdinSight</div>
+  </header>
+  <div class="page-wrapper" style="height: calc(100vh - 60px);">
+    <aside class="sidebar" id="sidebar">
+      <button id="sidebar-toggle" class="sidebar-toggle-btn">
+        <i data-feather="menu"></i>
+      </button>
+      <nav class="sidebar-nav">
+        <a href="market_radar.html"><i data-feather="bar-chart-2"></i><span>MarketRadar</span></a>
+        <a href="planner.html"><i data-feather="calendar"></i><span>Planner</span></a>
+        <a href="social.html" class="active"><i data-feather="trending-up"></i><span>SocialPulse</span></a>
+        <a href="insights.html"><i data-feather="pie-chart"></i><span>Insights</span></a>
+      </nav>
+    </aside>
+    <main class="main-content" id="main-content">
+      <!-- Filter Row -->
+      <div class="panel" style="background: var(--sidebar-nav-bg); box-shadow: none; border-radius: 10px; padding: 16px 20px; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 1.5rem;">
+        <form id="social-filters" style="display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; width: 100%;">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <span style="font-weight: 500;">Select Source :</span>
+            <select id="source" class="form-select" style="max-width: 180px;">
+              <option value="pytrends">Pytrends</option>
+              <option value="instagram">Instagram</option>
+              <option value="twitter">Twitter</option>
+            </select>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span style="font-weight: 500;">Select No. of Days :</span>
+            <input type="number" id="days" class="form-input" placeholder="Days" value="7" style="max-width: 100px; background: var(--background); color: var(--text-primary); border: 1px solid var(--border-color);" min="1" />
+          </div>
+          <button id="load-social-btn" class="btn btn-primary" type="button" style="max-width: 200px; background: var(--primary-accent); color: #fff; font-weight: 600; border-radius: 6px; padding: 0.75rem 1.5rem;">Load Social trends</button>
+        </form>
       </div>
-      <div class="pulse-card p-6 flex flex-col items-center">
-        <div class="text-2xl mb-2">🏷️</div>
-        <div class="text-sm uppercase tracking-wider">Most Popular Category</div>
-        <div id="most-popular-category" class="text-2xl mt-2">-</div>
-      </div>
-      <div class="pulse-card p-6 flex flex-col items-center">
-        <div class="text-2xl mb-2">📊</div>
-        <div class="text-sm uppercase tracking-wider">Total Trend Volume</div>
-        <div id="total-trend-volume" class="text-2xl mt-2">-</div>
-      </div>
-    </div>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="pulse-card flex flex-col items-center p-6">
-        <div class="pulse-title mb-2 text-blue-700 dark:text-blue-300 font-semibold">Top Trending Products</div>
-        <canvas id="bar-chart" height="120"></canvas>
-      </div>
-      <div class="pulse-card flex flex-col items-center p-6">
-        <div class="pulse-title mb-2 text-blue-700 dark:text-blue-300 font-semibold">Category Distribution</div>
-        <canvas id="pie-chart-cat" height="120"></canvas>
-      </div>
-    </div>
-    <div class="pulse-section">
-      <div class="grid md:grid-cols-2 gap-8">
-        <div>
-          <div class="pulse-title mb-2 text-blue-700 dark:text-blue-300 font-semibold">Trend Over Time (Top Products)</div>
-          <canvas id="line-chart-products" height="120"></canvas>
+      <!-- Top Charts Row -->
+      <div class="pulse-grid-2" style="margin-bottom: 0.5rem; align-items: flex-start;">
+        <div class="pulse-card flex flex-col items-center p-4" style="min-height: 260px; padding-top: 0px;">
+          <div class="pulse-title" style="margin-left: 16px; margin-top: 0; margin-bottom: 10px; align-self: flex-start; font-weight: 600; font-size: 1.15rem;">Top Trending Products</div>
+          <canvas id="bar-chart" height="120" style="max-width: 100%;"></canvas>
         </div>
-        <div>
-          <div class="pulse-title mb-2 text-blue-700 dark:text-blue-300 font-semibold">Trend Over Time (Categories)</div>
-          <canvas id="area-chart-categories" height="120"></canvas>
+        <div class="pulse-card flex flex-col items-center p-4" style="min-height: 260px; padding-top: 0px;">
+          <div class="pulse-title" style="margin-left: 16px; margin-top: 0; margin-bottom: 10px; align-self: flex-start; font-weight: 600; font-size: 1.15rem;">Category Distribution</div>
+          <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; width: 100%; gap: 1.5rem;">
+            <canvas id="pie-chart-cat" width="220" height="220" style="max-width: 220px; max-height: 220px;"></canvas>
+            <ul id="pie-chart-cat-legend" style="list-style: none; margin: 0; padding: 0; font-size: 1rem; max-width: 160px; word-break: break-word;"></ul>
+          </div>
         </div>
       </div>
-      <div class="pulse-recommend mt-8">
-        <h2 class="text-lg font-semibold mb-2">Recommended to Stock</h2>
-        <ul id="recommend-list" class="space-y-2"></ul>
+      <!-- Time Series Charts Row -->
+      <div class="pulse-section">
+        <div class="pulse-grid-2">
+          <div>
+            <div class="pulse-title" style="margin-left: 16px; margin-top: 0; margin-bottom: 10px; align-self: flex-start; font-weight: 600; font-size: 1.15rem;">Trend Over Time (Top Products)</div>
+            <canvas id="line-chart-products" height="120"></canvas>
+          </div>
+          <div>
+            <div class="pulse-title" style="margin-left: 16px; margin-top: 0; margin-bottom: 10px; align-self: flex-start; font-weight: 600; font-size: 1.15rem;">Trend Over Time (Categories)</div>
+            <canvas id="area-chart-categories" height="120"></canvas>
+          </div>
+        </div>
+        <div class="pulse-recommend mt-8" style="background: var(--sidebar-nav-bg); border-radius: 10px; padding: 1.25rem 1.5rem; margin: 1.5rem 0 0 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+          <h2 class="text-lg font-semibold mb-2" style="margin-left: 8px;">Recommended to Stock</h2>
+          <ul id="recommend-list" class="space-y-2" style="margin-left: 8px;"></ul>
+        </div>
       </div>
-    </div>
+    </main>
   </div>
   <script src="js/social.js"></script>
   <script>
     document.getElementById("load-social-btn").onclick = loadSocial;
-    document.getElementById("toggle-dark").onclick = function() {
-      document.body.classList.toggle("dark");
-      document.documentElement.classList.toggle("dark");
+    document.getElementById('sidebar-toggle').onclick = function() {
+      document.getElementById('sidebar').classList.toggle('collapsed');
     };
+    if (window.feather) feather.replace();
   </script>
 </body>
 </html>

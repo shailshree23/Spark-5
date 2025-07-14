@@ -3,7 +3,6 @@ let barChart, pieChartCat, lineChartProducts, areaChartCategories;
 function getEl(id) {
   const el = document.getElementById(id);
   if (!el) {
-    alert(`Element with id '${id}' not found in HTML!`);
     throw new Error(`Element with id '${id}' not found`);
   }
   return el;
@@ -19,25 +18,6 @@ async function loadSocial() {
     const res = await fetch(url);
     const data = await res.json();
     if (data.error) throw new Error(data.error);
-    // Robust summary cards
-    if (data.most_popular && typeof data.most_popular === 'string' && data.most_popular !== '-') {
-      getEl("most-popular").textContent = data.most_popular;
-    } else {
-      getEl("most-popular").textContent = "-";
-      console.warn("most_popular missing or empty from API response");
-    }
-    if (data.most_popular_category && typeof data.most_popular_category === 'string' && data.most_popular_category !== '-') {
-      getEl("most-popular-category").textContent = data.most_popular_category;
-    } else {
-      getEl("most-popular-category").textContent = "-";
-      console.warn("most_popular_category missing or empty from API response");
-    }
-    if (data.total_trend_volume !== undefined && data.total_trend_volume !== null && data.total_trend_volume !== '-') {
-      getEl("total-trend-volume").textContent = data.total_trend_volume;
-    } else {
-      getEl("total-trend-volume").textContent = "-";
-      console.warn("total_trend_volume missing or empty from API response");
-    }
     // Bar chart for top products
     showBarChart(data.top_products || []);
     // Pie chart for category distribution
@@ -50,12 +30,19 @@ async function loadSocial() {
     showRecommended(data.top_products || [], data.trends || []);
   } catch (error) {
     alert('Failed to load social trends: ' + error.message);
+    // Clear all charts if error
+    if (barChart) { barChart.destroy(); barChart = null; }
+    if (pieChartCat) { pieChartCat.destroy(); pieChartCat = null; }
+    if (lineChartProducts) { lineChartProducts.destroy(); lineChartProducts = null; }
+    if (areaChartCategories) { areaChartCategories.destroy(); areaChartCategories = null; }
+    getEl("recommend-list").innerHTML = "<li class='text-gray-400'>No data available.</li>";
   }
 }
 
 function showBarChart(topProducts) {
   const ctx = getEl("bar-chart").getContext("2d");
   if (barChart) barChart.destroy();
+  if (!topProducts.length) return;
   barChart = new Chart(ctx, {
     type: 'bar',
     data: {
@@ -96,13 +83,18 @@ function showBarChart(topProducts) {
 function showPieChartCat(catDist) {
   const ctx = getEl("pie-chart-cat").getContext("2d");
   if (pieChartCat) pieChartCat.destroy();
+  if (!Object.keys(catDist).length) {
+    getEl("pie-chart-cat-legend").innerHTML = "";
+    return;
+  }
+  const colors = ['#2563eb', '#10b981', '#fbbf24', '#6366f1', '#f59e42'];
   pieChartCat = new Chart(ctx, {
     type: 'doughnut',
     data: {
       labels: Object.keys(catDist),
       datasets: [{
         data: Object.values(catDist),
-        backgroundColor: ['#2563eb', '#10b981', '#fbbf24', '#6366f1', '#f59e42'],
+        backgroundColor: colors,
         borderWidth: 2,
         borderColor: '#fff',
         hoverOffset: 12
@@ -112,7 +104,7 @@ function showPieChartCat(catDist) {
       responsive: true,
       cutout: '70%',
       plugins: {
-        legend: { position: 'bottom', labels: { color: getComputedStyle(document.body).color } },
+        legend: { display: false },
       },
       animation: {
         animateScale: true,
@@ -121,16 +113,26 @@ function showPieChartCat(catDist) {
       }
     }
   });
+  // Render legend
+  const legendEl = getEl("pie-chart-cat-legend");
+  legendEl.innerHTML = Object.keys(catDist).map((cat, i) =>
+    `<li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.3rem;">
+      <span style="display: inline-block; width: 18px; height: 18px; border-radius: 4px; background: ${colors[i % colors.length]}; border: 1px solid #ccc;"></span>
+      <span>${cat}</span>
+    </li>`
+  ).join("");
 }
 
 function showLineChartProducts(productTimeSeries) {
   const ctx = getEl("line-chart-products").getContext("2d");
   if (lineChartProducts) lineChartProducts.destroy();
-  const datasets = Object.entries(productTimeSeries).map(([prod, series], i) => ({
+  const entries = Object.entries(productTimeSeries);
+  if (!entries.length) return;
+  const datasets = entries.map(([prod, series], i) => ({
     label: prod,
     data: series.map(pt => ({ x: pt.date, y: pt.score })),
-    borderColor: `hsl(${i*40}, 80%, 50%)`,
-    backgroundColor: `hsl(${i*40}, 80%, 90%)`,
+    borderColor: `hsl(${i * 40}, 80%, 50%)`,
+    backgroundColor: `hsl(${i * 40}, 80%, 90%)`,
     fill: false,
     tension: 0.3,
     pointRadius: 2
@@ -152,16 +154,16 @@ function showLineChartProducts(productTimeSeries) {
 function showAreaChartCategories(categoryTimeSeries) {
   const ctx = getEl("area-chart-categories").getContext("2d");
   if (areaChartCategories) areaChartCategories.destroy();
-  // Get all unique dates
+  const entries = Object.entries(categoryTimeSeries);
+  if (!entries.length) return;
   const allDates = Array.from(new Set(Object.values(categoryTimeSeries).flatMap(series => series.map(pt => pt.date)))).sort();
-  const datasets = Object.entries(categoryTimeSeries).map(([cat, series], i) => {
-    // Map scores to all dates (fill missing with 0)
+  const datasets = entries.map(([cat, series], i) => {
     const dateMap = Object.fromEntries(series.map(pt => [pt.date, pt.score]));
     return {
       label: cat,
       data: allDates.map(date => dateMap[date] || 0),
-      backgroundColor: `hsl(${i*60}, 80%, 80%)`,
-      borderColor: `hsl(${i*60}, 80%, 40%)`,
+      backgroundColor: `hsl(${i * 60}, 80%, 80%)`,
+      borderColor: `hsl(${i * 60}, 80%, 40%)`,
       fill: true,
       tension: 0.3,
       pointRadius: 0
@@ -185,18 +187,28 @@ function showAreaChartCategories(categoryTimeSeries) {
 function showRecommended(topProducts, trends) {
   const recommendList = getEl("recommend-list");
   recommendList.innerHTML = "";
-  // Simulate inventory check: if trending product is missing or low (< 50), recommend to stock more
+  if (!topProducts.length) {
+    recommendList.innerHTML = "<li class='text-gray-400'>No recommendations available.</li>";
+    return;
+  }
   const inventory = {
-    Smartphone: 40, Laptop: 60, Smartwatch: 20, 'Wireless Earbuds': 30, Kurta: 80, 'Guava Girl Dress': 10, Sneakers: 90, 'T-Shirts': 120, Rice: 200, Flour: 70
+    Smartphone: 40, Laptop: 60, Smartwatch: 20, 'Wireless Earbuds': 30,
+    Kurta: 80, 'Guava Girl Dress': 10, Sneakers: 90, 'T-Shirts': 120,
+    Rice: 200, Flour: 70
   };
   let any = false;
   topProducts.slice(0, 5).forEach(prod => {
-    const stock = inventory[prod.product] || 0;
-    if (stock < 50) {
-      recommendList.innerHTML += `<li>${prod.product}: Trending! Only ${stock} in inventory. <span class='text-blue-600 font-semibold'>Order More</span></li>`;
+    if (!(prod.product in inventory)) {
+      recommendList.innerHTML += `<li>${prod.product}: <span class='text-red-500 font-semibold'>Not in inventory</span></li>`;
       any = true;
     } else {
-      recommendList.innerHTML += `<li>${prod.product}: Inventory healthy (${stock})</li>`;
+      const stock = inventory[prod.product];
+      if (stock < 50) {
+        recommendList.innerHTML += `<li>${prod.product}: Trending! Only ${stock} in inventory. <span class='text-blue-600 font-semibold'>Order More</span></li>`;
+        any = true;
+      } else {
+        recommendList.innerHTML += `<li>${prod.product}: Inventory healthy (${stock})</li>`;
+      }
     }
   });
   if (!any) {
