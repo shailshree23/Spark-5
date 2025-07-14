@@ -6,11 +6,10 @@ from sklearn.preprocessing import MinMaxScaler
 from torch.utils.data import DataLoader, TensorDataset
 import os
 
-# Load sales data
-sales_df = pd.read_csv("backend/data/sales.csv")
+# --- FIX: Use correct encoding ---
+sales_df = pd.read_csv("backend/data/sales.csv", encoding='utf-8-sig')
 sales_df["date"] = pd.to_datetime(sales_df["date"])
 
-# Directory to save per-product models
 os.makedirs("ml_models/lstm_products", exist_ok=True)
 
 class LSTMNet(nn.Module):
@@ -34,35 +33,41 @@ def create_sequences(data, seq_len):
 seq_len = 7
 for product in sales_df['product'].unique():
     prod_df = sales_df[sales_df['product'] == product].sort_values('date')
-    # Aggregate sales per date to avoid duplicate dates
+    # --- THE REAL FIX: Aggregate sales per date ---
+    # This is crucial for creating a proper time series without duplicate dates
     prod_df = prod_df.groupby('date', as_index=False).agg({'sales': 'sum'})
-    # Fill missing dates
+    
     prod_df = prod_df.set_index('date').asfreq('D', fill_value=0).reset_index()
+    
     scaler = MinMaxScaler()
     scaled_sales = scaler.fit_transform(prod_df[["sales"]])
     X, y = create_sequences(scaled_sales, seq_len)
-    if len(X) == 0:
-        continue
-    X = torch.tensor(X).float()
-    y = torch.tensor(y).float()
-    dataset = TensorDataset(X, y)
+    
+    if len(X) < 1: continue
+
+    X_torch = torch.tensor(X, dtype=torch.float32)
+    y_torch = torch.tensor(y, dtype=torch.float32)
+    dataset = TensorDataset(X_torch, y_torch)
     loader = DataLoader(dataset, batch_size=4, shuffle=True)
+    
     model = LSTMNet()
     loss_fn = nn.MSELoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+
+    print(f"Training model for {product}...")
     for epoch in range(30):
-        total_loss = 0
         for xb, yb in loader:
             optimizer.zero_grad()
             out = model(xb)
             loss = loss_fn(out, yb)
             loss.backward()
             optimizer.step()
-            total_loss += loss.item()
-        if (epoch + 1) % 10 == 0:
-            print(f"{product} Epoch {epoch+1}: Loss={total_loss/len(loader):.4f}")
+            
+    # Save the trained model
+    product_key = str(product).replace(' ', '_').replace('"', '')
     torch.save({
         'model': model.state_dict(),
         'scaler_min': scaler.data_min_.tolist(),
         'scaler_max': scaler.data_max_.tolist(),
-    }, f"ml_models/lstm_products/forecast_model_lstm_{product.replace(' ', '_')}.pth")
+    }, f"ml_models/lstm_products/forecast_model_lstm_{product_key}.pth")
+    print(f"Model for {product} saved.")

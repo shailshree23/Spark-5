@@ -1,58 +1,97 @@
-# backend/app/routes/map_api.py
+# File: backend/app/routes/map_api.py
 
 from fastapi import APIRouter, Query
 import pandas as pd
 from backend.app.config import DATA_PATH
-# Import the functions directly from the file where they are defined
-from backend.app.utils.data_loader import load_sales_data, load_inventory_data
+from backend.app.utils.radar_insights import analyze_market_data
+from datetime import timedelta, datetime
 
 router = APIRouter()
 
+# --- THE FIX: This dictionary is now complete based on ALL your data files ---
+CITY_TO_STATE_MAP = {
+    "Delhi": "NCT OF Delhi",
+    "Bangalore": "Karnataka",
+    "Mumbai": "Maharashtra",
+    "Chennai": "Tamil Nadu",
+    "Hyderabad": "Telangana",
+    "Kolkata": "West Bengal",
+    "Pune": "Maharashtra",
+    "Ahmedabad": "Gujarat",
+    "Jaipur": "Rajasthan",
+    "Lucknow": "Uttar Pradesh",
+    "Kanpur": "Uttar Pradesh",
+    "Nagpur": "Maharashtra",
+    "Indore": "Madhya Pradesh"
+}
+
 @router.get("/")
-def get_map_data(region: str = "India", start: str = "2023-01-01", end: str = "2023-12-31", category: str = "", product: str = ""):
+def get_map_data(
+    region: str = None, category: str = None, product: str = None,
+    start: str = None, end: str = None
+):
     try:
-        # Use an empty string to signify all regions if "India" is selected.
-        # This aligns with how load_sales_data works (None or "" means all)
-        region_param = "" if region == "India" else region
+        sales_df = pd.read_csv(f"{DATA_PATH}/sales.csv", parse_dates=["date"], encoding='utf-8-sig')
+        trends_df = pd.read_csv(f"{DATA_PATH}/social_trends.csv", parse_dates=["date"], encoding='utf-8-sig')
         
-        # Load internal sales using our utility function
-        internal_sales = load_sales_data(region=region_param, category=category, product=product, start=start, end=end)
+        end_date = pd.to_datetime(end) if end else datetime.now()
+        start_date = pd.to_datetime(start) if start else end_date - timedelta(days=30)
+        
+        sales_filtered = sales_df[(sales_df['date'] >= start_date) & (sales_df['date'] <= end_date)]
+        
+        if region: sales_filtered = sales_filtered[sales_filtered['region'] == region]
+        if category: sales_filtered = sales_filtered[sales_filtered['category'] == category]
+        if product: sales_filtered = sales_filtered[sales_filtered['product'] == product]
 
-        # External demand (from social trends)
-        trends_df = pd.read_csv(f"{DATA_PATH}/social_trends.csv")
-        trends_df = trends_df[trends_df["category"].notna() & (trends_df["category"] != "")]
+        internal_sales_list = []
+        if not sales_filtered.empty:
+            duration = end_date - start_date
+            prev_start = start_date - duration
+            prev_sales_df = sales_df[(sales_df['date'] >= prev_start) & (sales_df['date'] < start_date)]
+
+            group_fields = ['region', 'product']
+            current_agg = sales_filtered.groupby(group_fields).agg(sales=('sales', 'sum')).reset_index()
+            prev_agg = prev_sales_df.groupby(group_fields).agg(prev_sales=('sales', 'sum')).reset_index()
+            
+            if not prev_agg.empty:
+                merged = pd.merge(current_agg, prev_agg, on=group_fields, how='left').fillna(0)
+                merged['trend'] = merged.apply(
+                    lambda r: 'increasing' if r['sales'] > r['prev_sales'] else 'decreasing' if r['sales'] < r['prev_sales'] else 'stable',
+                    axis=1
+                )
+            else:
+                merged = current_agg
+                merged['trend'] = 'stable'
+            internal_sales_list = merged.to_dict("records")
+
+        trends_filtered = trends_df
         if category:
-            trends_df = trends_df[trends_df["category"] == category]
-        # For map data, aggregating by category is more useful for display
-        external_demand_agg_field = "category"
-        if region != "India" and product: # Be more specific for a city+product view
-            external_demand_agg_field = "product"
-
-        external_demand = trends_df.groupby(external_demand_agg_field)["score"].sum().reset_index().rename(columns={"score": "interest"})
-        external_demand = external_demand.to_dict(orient="records")
+            trends_filtered = trends_filtered[trends_filtered['category'] == category]
         
-        # Inventory overview
-        inventory = load_inventory_data(region=region_param, category=category)
-        inventory_overview = {}
-        for item in inventory:
-            reg = item["region"]
-            prod = item["product"]
-            if reg not in inventory_overview:
-                inventory_overview[reg] = {}
-            inventory_overview[reg][prod] = item["stock"]
+        demand_per_category = trends_filtered.groupby('category')['score'].sum().reset_index()
+        
+        sales_df['state'] = sales_df['region'].map(CITY_TO_STATE_MAP)
+        category_state_link = sales_df[['category', 'state']].dropna().drop_duplicates()
 
-        # Calculate demand hotspots from sales data
-        if not internal_sales:
-             demand_hotspots = []
+        if not demand_per_category.empty and not category_state_link.empty:
+            state_demand_df = pd.merge(category_state_link, demand_per_category, on='category', how='inner')
+            external_demand_by_state = state_demand_df.groupby('state')['score'].sum().reset_index()
+            external_demand_by_state = external_demand_by_state.rename(columns={"score": "demand_score"}).to_dict("records")
         else:
-             demand_hotspots = sorted(internal_sales, key=lambda x: x['sales'], reverse=True)[:5]
+            external_demand_by_state = []
+
+        sales_by_category = sales_filtered.groupby('category')['sales'].sum().reset_index()
+        demand_for_insights = demand_per_category.rename(columns={'score': 'interest'})
         
+        key_insights = analyze_market_data(sales_by_category.to_dict("records"), demand_for_insights.to_dict("records"))
+
         return {
-            "internal_sales": internal_sales,
-            "external_demand": external_demand,
-            "inventory_overview": inventory_overview,
-            "demand_hotspots": demand_hotspots
+            "internal_sales": internal_sales_list,
+            "external_demand_by_state": external_demand_by_state,
+            "emerging_hotspots": key_insights["emerging_hotspots"],
+            "mismatched_opportunities": key_insights["mismatched_opportunities"],
         }
     except Exception as e:
-        print(f"Error in get_map_data: {e}")
+        import traceback
+        traceback.print_exc()
         return {"error": str(e)}

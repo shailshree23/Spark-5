@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MarketRadar</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header class="top-nav">
+        <div class="top-nav-title">OdinSight</div>
+    </header>
+
+    <div class="page-wrapper">
+        <aside class="sidebar" id="sidebar">
+            <button id="sidebar-toggle" class="sidebar-toggle-btn">
+                <i data-feather="menu"></i>
+            </button>
+            <nav class="sidebar-nav">
+                <a href="market_radar.html" class="active"><i data-feather="bar-chart-2"></i><span>MarketRadar</span></a>
+                <a href="planner.html"><i data-feather="calendar"></i><span>Planner</span></a>
+                <a href="social.html"><i data-feather="trending-up"></i><span>Social Pulse</span></a>
+                <a href="insights.html"><i data-feather="pie-chart"></i><span>Insights</span></a>
+            </nav>
+        </aside>
+
+        <main class="main-content" id="main-content">
+            <div class="left-column">
+                <section class="panel">
+                    <h1 class="panel-title">MarketRadar Filters</h1>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div>
+                            <label for="region" class="form-label">Region:</label>
+                            <select id="region" class="form-select"></select>
+                        </div>
+                        
+                        <!-- REMOVED THE WRAPPER AND <i> TAG -->
+                        <div>
+                            <label for="start" class="form-label">From:</label>
+                            <input type="date" id="start" class="form-input">
+                        </div>
+
+                        <!-- REMOVED THE WRAPPER AND <i> TAG -->
+                        <div>
+                            <label for="end" class="form-label">To:</label>
+                            <input type="date" id="end" class="form-input">
+                        </div>
+
+                        <div>
+                            <label for="category" class="form-label">Category:</label>
+                            <select id="category" class="form-select"></select>
+                        </div>
+                        <div>
+                            <label for="product" class="form-label">Product:</label>
+                            <select id="product" class="form-select"></select>
+                        </div>
+                        <button id="show-data-btn" class="btn btn-primary" style="margin-top: 1rem;">Show Data</button>
+                    </div>
+                </section>
+                <section class="panel" style="display: flex; flex-direction: column; gap: 1rem;">
+                     <h2 class="panel-title">Key Insights</h2>
+                    <div class="insight-box emerging">Emerging Hotspots</div>
+                    <div class="insight-box mismatched">Mismatched Opportunity</div>
+                    <button id="download-pdf-btn" class="btn btn-secondary" style="margin-top: 0.5rem;">Download as PDF</button>
+                </section>
+            </div>
+            <div class="right-column">
+                <section class="panel layer-panel">
+                    <h2 class="panel-title" style="margin-bottom: 0.75rem;">Select Layers</h2>
+                    <div class="layer-selector">
+                        <label><input type="checkbox" name="layer" value="external" checked> External Demand</label>
+                        <label><input type="checkbox" name="layer" value="internal"> Internal Sales</label>
+                    </div>
+                </section>
+                <div id="map" class="map-container"></div>
+            </div>
+        </main>
+    </div>
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/market_radar.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>

@@ -1,131 +1,501 @@
 product,warehouse,region,category,stock
-Smartphone,WH1,Delhi,Electronics,500
-Laptop,WH1,Delhi,Electronics,300
-Smartwatch,WH1,Delhi,Electronics,200
-Wireless Earbuds,WH1,Delhi,Electronics,250
-Kurta,WH1,Delhi,Fashion,350
-Guava Girl Dress,WH1,Delhi,Fashion,150
-Sneakers,WH1,Delhi,Fashion,400
-T-Shirts,WH1,Delhi,Fashion,600
-Rice,WH1,Delhi,Grocery,1200
-Flour,WH1,Delhi,Grocery,700
-Smartphone,WH2,Mumbai,Electronics,600
-Laptop,WH2,Mumbai,Electronics,350
-Smartwatch,WH2,Mumbai,Electronics,250
-Wireless Earbuds,WH2,Mumbai,Electronics,300
-Kurta,WH2,Mumbai,Fashion,400
-Guava Girl Dress,WH2,Mumbai,Fashion,200
-Sneakers,WH2,Mumbai,Fashion,450
-T-Shirts,WH2,Mumbai,Fashion,700
-Rice,WH2,Mumbai,Grocery,1400
-Flour,WH2,Mumbai,Grocery,800
-Smartphone,WH3,Bangalore,Electronics,450
-Laptop,WH3,Bangalore,Electronics,250
-Smartwatch,WH3,Bangalore,Electronics,150
-Wireless Earbuds,WH3,Bangalore,Electronics,200
-Kurta,WH3,Bangalore,Fashion,300
-Guava Girl Dress,WH3,Bangalore,Fashion,100
-Sneakers,WH3,Bangalore,Fashion,350
-T-Shirts,WH3,Bangalore,Fashion,500
-Rice,WH3,Bangalore,Grocery,1000
-Flour,WH3,Bangalore,Grocery,600
-Smartphone,WH4,Chennai,Electronics,400
-Laptop,WH4,Chennai,Electronics,200
-Smartwatch,WH4,Chennai,Electronics,100
-Wireless Earbuds,WH4,Chennai,Electronics,150
-Kurta,WH4,Chennai,Fashion,250
-Guava Girl Dress,WH4,Chennai,Fashion,80
-Sneakers,WH4,Chennai,Fashion,300
-T-Shirts,WH4,Chennai,Fashion,400
-Rice,WH4,Chennai,Grocery,800
-Flour,WH4,Chennai,Grocery,500
-Smartphone,WH5,Hyderabad,Electronics,350
-Laptop,WH5,Hyderabad,Electronics,150
-Smartwatch,WH5,Hyderabad,Electronics,80
-Wireless Earbuds,WH5,Hyderabad,Electronics,100
-Kurta,WH5,Hyderabad,Fashion,200
-Guava Girl Dress,WH5,Hyderabad,Fashion,60
-Sneakers,WH5,Hyderabad,Fashion,250
-T-Shirts,WH5,Hyderabad,Fashion,350
-Rice,WH5,Hyderabad,Grocery,700
-Flour,WH5,Hyderabad,Grocery,400
-Smartphone,WH6,Kolkata,Electronics,300
-Laptop,WH6,Kolkata,Electronics,100
-Smartwatch,WH6,Kolkata,Electronics,60
-Wireless Earbuds,WH6,Kolkata,Electronics,100
-Kurta,WH6,Kolkata,Fashion,150
-Guava Girl Dress,WH6,Kolkata,Fashion,40
-Sneakers,WH6,Kolkata,Fashion,150
-T-Shirts,WH6,Kolkata,Fashion,250
-Rice,WH6,Kolkata,Grocery,600
-Flour,WH6,Kolkata,Grocery,300
-Smartphone,WH7,Pune,Electronics,200
-Laptop,WH7,Pune,Electronics,80
-Smartwatch,WH7,Pune,Electronics,40
-Wireless Earbuds,WH7,Pune,Electronics,60
-Kurta,WH7,Pune,Fashion,100
-Guava Girl Dress,WH7,Pune,Fashion,20
-Sneakers,WH7,Pune,Fashion,80
-T-Shirts,WH7,Pune,Fashion,150
-Rice,WH7,Pune,Grocery,400
-Flour,WH7,Pune,Grocery,150
-Smartphone,WH8,Ahmedabad,Electronics,200
-Laptop,WH8,Ahmedabad,Electronics,100
-Smartwatch,WH8,Ahmedabad,Electronics,60
-Wireless Earbuds,WH8,Ahmedabad,Electronics,100
-Kurta,WH8,Ahmedabad,Fashion,150
-Guava Girl Dress,WH8,Ahmedabad,Fashion,40
-Sneakers,WH8,Ahmedabad,Fashion,150
-T-Shirts,WH8,Ahmedabad,Fashion,250
-Rice,WH8,Ahmedabad,Grocery,600
-Flour,WH8,Ahmedabad,Grocery,300
-Smartphone,WH9,Jaipur,Electronics,150
-Laptop,WH9,Jaipur,Electronics,70
-Smartwatch,WH9,Jaipur,Electronics,40
-Wireless Earbuds,WH9,Jaipur,Electronics,70
-Kurta,WH9,Jaipur,Fashion,120
-Guava Girl Dress,WH9,Jaipur,Fashion,30
-Sneakers,WH9,Jaipur,Fashion,100
-T-Shirts,WH9,Jaipur,Fashion,200
-Rice,WH9,Jaipur,Grocery,500
-Flour,WH9,Jaipur,Grocery,200
-Smartphone,WH10,Lucknow,Electronics,100
-Laptop,WH10,Lucknow,Electronics,40
-Smartwatch,WH10,Lucknow,Electronics,30
-Wireless Earbuds,WH10,Lucknow,Electronics,50
-Kurta,WH10,Lucknow,Fashion,80
-Guava Girl Dress,WH10,Lucknow,Fashion,20
-Sneakers,WH10,Lucknow,Fashion,70
-T-Shirts,WH10,Lucknow,Fashion,150
-Rice,WH10,Lucknow,Grocery,400
-Flour,WH10,Lucknow,Grocery,150
-Smartphone,WH11,Kanpur,Electronics,80
-Laptop,WH11,Kanpur,Electronics,30
-Smartwatch,WH11,Kanpur,Electronics,20
-Wireless Earbuds,WH11,Kanpur,Electronics,30
-Kurta,WH11,Kanpur,Fashion,40
-Guava Girl Dress,WH11,Kanpur,Fashion,10
-Sneakers,WH11,Kanpur,Fashion,50
-T-Shirts,WH11,Kanpur,Fashion,100
-Rice,WH11,Kanpur,Grocery,300
-Flour,WH11,Kanpur,Grocery,100
-Smartphone,WH12,Nagpur,Electronics,60
-Laptop,WH12,Nagpur,Electronics,20
-Smartwatch,WH12,Nagpur,Electronics,10
-Wireless Earbuds,WH12,Nagpur,Electronics,20
-Kurta,WH12,Nagpur,Fashion,20
-Guava Girl Dress,WH12,Nagpur,Fashion,5
-Sneakers,WH12,Nagpur,Fashion,20
-T-Shirts,WH12,Nagpur,Fashion,50
-Rice,WH12,Nagpur,Grocery,150
-Flour,WH12,Nagpur,Grocery,50
-Smartphone,WH13,Indore,Electronics,40
-Laptop,WH13,Indore,Electronics,15
-Smartwatch,WH13,Indore,Electronics,10
-Wireless Earbuds,WH13,Indore,Electronics,20
-Kurta,WH13,Indore,Fashion,10
-Guava Girl Dress,WH13,Indore,Fashion,2
-Sneakers,WH13,Indore,Fashion,10
-T-Shirts,WH13,Indore,Fashion,30
-Rice,WH13,Indore,Grocery,100
-Flour,WH13,Indore,Grocery,30
+Nirma Washing Powder 1kg,WH1-Kolkata,Kolkata,Laundry,237
+Chumbak Printed Cushion Cover 40x40cm,WH1-Mumbai,Mumbai,Home Decor,587
+Borosil Glass Mixing Bowl Set,WH2-Mumbai,Mumbai,Utensils,795
+Aashirvaad Whole Wheat Atta 5kg,WH2-Pune,Pune,Groceries,363
+Fortune Soya Oil 1L,WH1-Bangalore,Bangalore,Groceries,874
+Tata Salt 1kg,WH2-Chennai,Chennai,Groceries,205
+Himalaya Neem Face Wash 150ml,WH2-Chennai,Chennai,Bodycare,911
+India Gate Basmati Rice (2 Years Aged) 5kg,WH1-Ahmedabad,Ahmedabad,Groceries,455
+Sony Bravia 55" 4K TV,WH1-Hyderabad,Hyderabad,Electronics,674
+Tata Salt 1kg,WH2-Hyderabad,Hyderabad,Groceries,484
+Prestige Deluxe Alpha Pressure Cooker 5L,WH2-Ahmedabad,Ahmedabad,Utensils,862
+Fortune Soya Oil 1L,WH1-Pune,Pune,Groceries,992
+Dove Cream Beauty Bathing Bar 100g,WH2-Kolkata,Kolkata,Bodycare,587
+Chumbak Printed Cushion Cover 40x40cm,WH2-Mumbai,Mumbai,Home Decor,490
+Borosil Glass Mixing Bowl Set,WH2-Bangalore,Bangalore,Utensils,299
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH1-Ahmedabad,Ahmedabad,Bodycare,271
+Borosil Glass Mixing Bowl Set,WH1-Ahmedabad,Ahmedabad,Utensils,463
+boAt Airdopes 141 Earbuds,WH2-Bangalore,Bangalore,Electronics,995
+Banana Robusta 1kg,WH1-Kolkata,Kolkata,Groceries,512
+H&M Relaxed Fit Hoodie,WH1-Delhi,Delhi,Apparel,480
+Chumbak Printed Cushion Cover 40x40cm,WH2-Mumbai,Mumbai,Home Decor,325
+Rin Bar 250g,WH1-Pune,Pune,Laundry,567
+Nivea Men Deodorant 150ml,WH1-Hyderabad,Hyderabad,Bodycare,394
+Himalaya Neem Face Wash 150ml,WH1-Chennai,Chennai,Bodycare,198
+D'Decor Blackout Curtains 7ft,WH1-Kolkata,Kolkata,Home Decor,332
+boAt Airdopes 141 Earbuds,WH2-Chennai,Chennai,Electronics,234
+FabIndia Cotton Kurta,WH1-Hyderabad,Hyderabad,Apparel,942
+Sony Bravia 55" 4K TV,WH1-Kolkata,Kolkata,Electronics,959
+H&M Relaxed Fit Hoodie,WH2-Hyderabad,Hyderabad,Apparel,587
+Rin Bar 250g,WH1-Pune,Pune,Laundry,161
+IKEA RANARP Floor Lamp,WH1-Bangalore,Bangalore,Home Decor,307
+Milton Thermosteel Flask 1L,WH1-Ahmedabad,Ahmedabad,Utensils,386
+Fortune Soya Oil 1L,WH2-Kolkata,Kolkata,Groceries,857
+Sony Bravia 55" 4K TV,WH1-Delhi,Delhi,Electronics,439
+Himalaya Neem Face Wash 150ml,WH2-Ahmedabad,Ahmedabad,Bodycare,585
+Tata Salt 1kg,WH2-Kolkata,Kolkata,Groceries,384
+Ariel Complete Detergent Powder 500g,WH2-Bangalore,Bangalore,Laundry,423
+Milton Thermosteel Flask 1L,WH2-Chennai,Chennai,Utensils,31
+FabIndia Cotton Kurta,WH1-Chennai,Chennai,Apparel,191
+Chumbak Printed Cushion Cover 40x40cm,WH2-Kolkata,Kolkata,Home Decor,50
+Dove Cream Beauty Bathing Bar 100g,WH2-Hyderabad,Hyderabad,Bodycare,703
+H&M Relaxed Fit Hoodie,WH1-Mumbai,Mumbai,Apparel,85
+IKEA RANARP Floor Lamp,WH2-Ahmedabad,Ahmedabad,Home Decor,582
+Nivea Men Deodorant 150ml,WH2-Delhi,Delhi,Bodycare,483
+H&M Relaxed Fit Hoodie,WH2-Kolkata,Kolkata,Apparel,845
+Tata Salt 1kg,WH2-Bangalore,Bangalore,Groceries,484
+Ariel Complete Detergent Powder 500g,WH2-Kolkata,Kolkata,Laundry,901
+Samsung Galaxy S24 128GB,WH2-Chennai,Chennai,Electronics,650
+Nike Dri-FIT Legend Shirt,WH2-Pune,Pune,Apparel,610
+D'Decor Blackout Curtains 7ft,WH1-Chennai,Chennai,Home Decor,735
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Kolkata,Kolkata,Bodycare,552
+Urban Ladder Walnut Coffee Table,WH1-Hyderabad,Hyderabad,Home Decor,648
+Tata Salt 1kg,WH1-Ahmedabad,Ahmedabad,Groceries,385
+Samsung Galaxy S24 128GB,WH2-Pune,Pune,Electronics,144
+Ariel Complete Detergent Powder 500g,WH2-Mumbai,Mumbai,Laundry,798
+Rin Bar 250g,WH2-Ahmedabad,Ahmedabad,Laundry,881
+Amul Gold Milk 1L,WH2-Pune,Pune,Groceries,550
+IKEA RANARP Floor Lamp,WH1-Hyderabad,Hyderabad,Home Decor,717
+Nivea Men Deodorant 150ml,WH2-Mumbai,Mumbai,Bodycare,613
+D'Decor Blackout Curtains 7ft,WH1-Kolkata,Kolkata,Home Decor,651
+Apple MacBook Air M3 13",WH2-Pune,Pune,Electronics,374
+Rin Bar 250g,WH1-Pune,Pune,Laundry,833
+Tata Salt 1kg,WH1-Kolkata,Kolkata,Groceries,974
+Tata Salt 1kg,WH2-Ahmedabad,Ahmedabad,Groceries,205
+Tata Salt 1kg,WH1-Hyderabad,Hyderabad,Groceries,598
+Amul Gold Milk 1L,WH1-Bangalore,Bangalore,Groceries,34
+Nike Dri-FIT Legend Shirt,WH1-Delhi,Delhi,Apparel,663
+Chumbak Printed Cushion Cover 40x40cm,WH1-Pune,Pune,Home Decor,57
+Milton Thermosteel Flask 1L,WH1-Chennai,Chennai,Utensils,251
+Hawkins Contura Non-Stick Fry Pan 26cm,WH2-Kolkata,Kolkata,Utensils,131
+Nirma Washing Powder 1kg,WH1-Delhi,Delhi,Laundry,829
+Rin Bar 250g,WH2-Ahmedabad,Ahmedabad,Laundry,69
+H&M Relaxed Fit Hoodie,WH1-Bangalore,Bangalore,Apparel,381
+Ariel Complete Detergent Powder 500g,WH1-Kolkata,Kolkata,Laundry,430
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Ahmedabad,Ahmedabad,Bodycare,594
+D'Decor Blackout Curtains 7ft,WH1-Pune,Pune,Home Decor,60
+Surf Excel Matic Liquid 1L,WH2-Bangalore,Bangalore,Laundry,745
+Amul Gold Milk 1L,WH1-Ahmedabad,Ahmedabad,Groceries,236
+Nivea Men Deodorant 150ml,WH2-Mumbai,Mumbai,Bodycare,448
+Sony Bravia 55" 4K TV,WH2-Bangalore,Bangalore,Electronics,45
+Ariel Complete Detergent Powder 500g,WH2-Mumbai,Mumbai,Laundry,944
+Himalaya Neem Face Wash 150ml,WH2-Pune,Pune,Bodycare,568
+Chumbak Printed Cushion Cover 40x40cm,WH2-Delhi,Delhi,Home Decor,203
+Ariel Complete Detergent Powder 500g,WH2-Mumbai,Mumbai,Laundry,457
+Dove Cream Beauty Bathing Bar 100g,WH2-Kolkata,Kolkata,Bodycare,625
+Aashirvaad Whole Wheat Atta 5kg,WH2-Chennai,Chennai,Groceries,30
+Rin Bar 250g,WH1-Mumbai,Mumbai,Laundry,849
+India Gate Basmati Rice (2 Years Aged) 5kg,WH2-Kolkata,Kolkata,Groceries,270
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH1-Chennai,Chennai,Bodycare,803
+Sony Bravia 55" 4K TV,WH2-Hyderabad,Hyderabad,Electronics,709
+IKEA RANARP Floor Lamp,WH1-Mumbai,Mumbai,Home Decor,285
+Banana Robusta 1kg,WH2-Ahmedabad,Ahmedabad,Groceries,40
+IKEA RANARP Floor Lamp,WH2-Chennai,Chennai,Home Decor,856
+Nivea Men Deodorant 150ml,WH2-Ahmedabad,Ahmedabad,Bodycare,541
+India Gate Basmati Rice (2 Years Aged) 5kg,WH2-Hyderabad,Hyderabad,Groceries,921
+Chumbak Printed Cushion Cover 40x40cm,WH1-Mumbai,Mumbai,Home Decor,284
+Chumbak Printed Cushion Cover 40x40cm,WH1-Delhi,Delhi,Home Decor,766
+Amul Gold Milk 1L,WH1-Hyderabad,Hyderabad,Groceries,806
+FabIndia Cotton Kurta,WH1-Hyderabad,Hyderabad,Apparel,526
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH1-Hyderabad,Hyderabad,Bodycare,694
+Ariel Complete Detergent Powder 500g,WH1-Pune,Pune,Laundry,777
+Nirma Washing Powder 1kg,WH2-Pune,Pune,Laundry,247
+FabIndia Cotton Kurta,WH2-Mumbai,Mumbai,Apparel,281
+Banana Robusta 1kg,WH2-Hyderabad,Hyderabad,Groceries,228
+Himalaya Neem Face Wash 150ml,WH2-Chennai,Chennai,Bodycare,124
+boAt Airdopes 141 Earbuds,WH1-Hyderabad,Hyderabad,Electronics,473
+Milton Thermosteel Flask 1L,WH1-Pune,Pune,Utensils,209
+Milton Thermosteel Flask 1L,WH2-Mumbai,Mumbai,Utensils,990
+Chumbak Printed Cushion Cover 40x40cm,WH1-Pune,Pune,Home Decor,309
+Banana Robusta 1kg,WH1-Ahmedabad,Ahmedabad,Groceries,298
+Dove Cream Beauty Bathing Bar 100g,WH2-Pune,Pune,Bodycare,25
+Rin Bar 250g,WH1-Mumbai,Mumbai,Laundry,920
+FabIndia Cotton Kurta,WH1-Chennai,Chennai,Apparel,2
+Ariel Complete Detergent Powder 500g,WH2-Chennai,Chennai,Laundry,658
+Samsung Galaxy S24 128GB,WH1-Delhi,Delhi,Electronics,958
+Apple MacBook Air M3 13",WH1-Pune,Pune,Electronics,710
+FabIndia Cotton Kurta,WH1-Ahmedabad,Ahmedabad,Apparel,155
+Nike Dri-FIT Legend Shirt,WH1-Hyderabad,Hyderabad,Apparel,630
+Prestige Deluxe Alpha Pressure Cooker 5L,WH2-Hyderabad,Hyderabad,Utensils,130
+D'Decor Blackout Curtains 7ft,WH1-Pune,Pune,Home Decor,562
+Dove Cream Beauty Bathing Bar 100g,WH1-Hyderabad,Hyderabad,Bodycare,15
+D'Decor Blackout Curtains 7ft,WH1-Delhi,Delhi,Home Decor,841
+boAt Airdopes 141 Earbuds,WH1-Pune,Pune,Electronics,473
+Borosil Glass Mixing Bowl Set,WH2-Chennai,Chennai,Utensils,839
+Ariel Complete Detergent Powder 500g,WH2-Hyderabad,Hyderabad,Laundry,622
+Himalaya Neem Face Wash 150ml,WH2-Kolkata,Kolkata,Bodycare,57
+Nike Dri-FIT Legend Shirt,WH2-Delhi,Delhi,Apparel,876
+Surf Excel Matic Liquid 1L,WH2-Pune,Pune,Laundry,776
+FabIndia Cotton Kurta,WH2-Pune,Pune,Apparel,772
+Himalaya Neem Face Wash 150ml,WH1-Chennai,Chennai,Bodycare,126
+Aashirvaad Whole Wheat Atta 5kg,WH1-Kolkata,Kolkata,Groceries,524
+Fortune Soya Oil 1L,WH1-Ahmedabad,Ahmedabad,Groceries,745
+Rin Bar 250g,WH2-Mumbai,Mumbai,Laundry,898
+Dove Cream Beauty Bathing Bar 100g,WH2-Bangalore,Bangalore,Bodycare,92
+Milton Thermosteel Flask 1L,WH2-Chennai,Chennai,Utensils,846
+boAt Airdopes 141 Earbuds,WH1-Delhi,Delhi,Electronics,934
+D'Decor Blackout Curtains 7ft,WH2-Pune,Pune,Home Decor,965
+Aashirvaad Whole Wheat Atta 5kg,WH1-Hyderabad,Hyderabad,Groceries,361
+Chumbak Printed Cushion Cover 40x40cm,WH1-Chennai,Chennai,Home Decor,508
+Dove Cream Beauty Bathing Bar 100g,WH2-Bangalore,Bangalore,Bodycare,288
+Chumbak Printed Cushion Cover 40x40cm,WH1-Bangalore,Bangalore,Home Decor,759
+H&M Relaxed Fit Hoodie,WH2-Delhi,Delhi,Apparel,608
+Banana Robusta 1kg,WH1-Ahmedabad,Ahmedabad,Groceries,962
+FabIndia Cotton Kurta,WH2-Chennai,Chennai,Apparel,738
+Sony Bravia 55" 4K TV,WH1-Mumbai,Mumbai,Electronics,311
+Borosil Glass Mixing Bowl Set,WH2-Ahmedabad,Ahmedabad,Utensils,520
+Ariel Complete Detergent Powder 500g,WH1-Kolkata,Kolkata,Laundry,365
+D'Decor Blackout Curtains 7ft,WH2-Mumbai,Mumbai,Home Decor,916
+Urban Ladder Walnut Coffee Table,WH2-Delhi,Delhi,Home Decor,695
+Aashirvaad Whole Wheat Atta 5kg,WH1-Pune,Pune,Groceries,188
+IKEA RANARP Floor Lamp,WH1-Delhi,Delhi,Home Decor,230
+Nike Dri-FIT Legend Shirt,WH2-Mumbai,Mumbai,Apparel,872
+D'Decor Blackout Curtains 7ft,WH2-Hyderabad,Hyderabad,Home Decor,108
+Ariel Complete Detergent Powder 500g,WH2-Pune,Pune,Laundry,609
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Chennai,Chennai,Bodycare,135
+H&M Relaxed Fit Hoodie,WH2-Chennai,Chennai,Apparel,692
+Chumbak Printed Cushion Cover 40x40cm,WH2-Pune,Pune,Home Decor,45
+boAt Airdopes 141 Earbuds,WH2-Mumbai,Mumbai,Electronics,807
+Nirma Washing Powder 1kg,WH1-Chennai,Chennai,Laundry,106
+Himalaya Neem Face Wash 150ml,WH1-Pune,Pune,Bodycare,5
+FabIndia Cotton Kurta,WH1-Bangalore,Bangalore,Apparel,944
+boAt Airdopes 141 Earbuds,WH1-Pune,Pune,Electronics,976
+Fortune Soya Oil 1L,WH1-Kolkata,Kolkata,Groceries,347
+Amul Gold Milk 1L,WH2-Pune,Pune,Groceries,261
+D'Decor Blackout Curtains 7ft,WH1-Delhi,Delhi,Home Decor,773
+India Gate Basmati Rice (2 Years Aged) 5kg,WH1-Ahmedabad,Ahmedabad,Groceries,962
+Hawkins Contura Non-Stick Fry Pan 26cm,WH1-Pune,Pune,Utensils,464
+Milton Thermosteel Flask 1L,WH2-Mumbai,Mumbai,Utensils,528
+Prestige Deluxe Alpha Pressure Cooker 5L,WH1-Bangalore,Bangalore,Utensils,25
+Aashirvaad Whole Wheat Atta 5kg,WH1-Mumbai,Mumbai,Groceries,316
+Hawkins Contura Non-Stick Fry Pan 26cm,WH1-Delhi,Delhi,Utensils,316
+Surf Excel Matic Liquid 1L,WH2-Chennai,Chennai,Laundry,61
+Rin Bar 250g,WH1-Chennai,Chennai,Laundry,315
+Dove Cream Beauty Bathing Bar 100g,WH2-Kolkata,Kolkata,Bodycare,785
+Urban Ladder Walnut Coffee Table,WH2-Chennai,Chennai,Home Decor,382
+Hawkins Contura Non-Stick Fry Pan 26cm,WH2-Ahmedabad,Ahmedabad,Utensils,379
+Aashirvaad Whole Wheat Atta 5kg,WH2-Hyderabad,Hyderabad,Groceries,484
+Banana Robusta 1kg,WH2-Kolkata,Kolkata,Groceries,821
+Dove Cream Beauty Bathing Bar 100g,WH1-Mumbai,Mumbai,Bodycare,235
+D'Decor Blackout Curtains 7ft,WH1-Mumbai,Mumbai,Home Decor,282
+Tata Salt 1kg,WH2-Kolkata,Kolkata,Groceries,624
+Banana Robusta 1kg,WH1-Pune,Pune,Groceries,210
+Banana Robusta 1kg,WH1-Chennai,Chennai,Groceries,583
+Nivea Men Deodorant 150ml,WH2-Bangalore,Bangalore,Bodycare,115
+Sony Bravia 55" 4K TV,WH2-Hyderabad,Hyderabad,Electronics,272
+boAt Airdopes 141 Earbuds,WH2-Kolkata,Kolkata,Electronics,288
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH1-Ahmedabad,Ahmedabad,Bodycare,222
+Fortune Soya Oil 1L,WH1-Hyderabad,Hyderabad,Groceries,848
+Nivea Men Deodorant 150ml,WH2-Kolkata,Kolkata,Bodycare,623
+Urban Ladder Walnut Coffee Table,WH2-Bangalore,Bangalore,Home Decor,309
+Aashirvaad Whole Wheat Atta 5kg,WH2-Pune,Pune,Groceries,768
+Nirma Washing Powder 1kg,WH1-Pune,Pune,Laundry,886
+Samsung Galaxy S24 128GB,WH2-Mumbai,Mumbai,Electronics,262
+Ariel Complete Detergent Powder 500g,WH2-Bangalore,Bangalore,Laundry,856
+Ariel Complete Detergent Powder 500g,WH1-Hyderabad,Hyderabad,Laundry,421
+Ariel Complete Detergent Powder 500g,WH2-Kolkata,Kolkata,Laundry,830
+IKEA RANARP Floor Lamp,WH2-Chennai,Chennai,Home Decor,588
+Milton Thermosteel Flask 1L,WH1-Ahmedabad,Ahmedabad,Utensils,742
+Himalaya Neem Face Wash 150ml,WH1-Kolkata,Kolkata,Bodycare,908
+FabIndia Cotton Kurta,WH2-Chennai,Chennai,Apparel,598
+Rin Bar 250g,WH1-Kolkata,Kolkata,Laundry,722
+Hawkins Contura Non-Stick Fry Pan 26cm,WH2-Delhi,Delhi,Utensils,630
+Dove Cream Beauty Bathing Bar 100g,WH2-Mumbai,Mumbai,Bodycare,968
+Chumbak Printed Cushion Cover 40x40cm,WH2-Mumbai,Mumbai,Home Decor,707
+H&M Relaxed Fit Hoodie,WH1-Hyderabad,Hyderabad,Apparel,997
+Chumbak Printed Cushion Cover 40x40cm,WH2-Delhi,Delhi,Home Decor,601
+FabIndia Cotton Kurta,WH2-Pune,Pune,Apparel,84
+Milton Thermosteel Flask 1L,WH1-Ahmedabad,Ahmedabad,Utensils,55
+Milton Thermosteel Flask 1L,WH2-Delhi,Delhi,Utensils,62
+Ariel Complete Detergent Powder 500g,WH1-Pune,Pune,Laundry,278
+FabIndia Cotton Kurta,WH1-Mumbai,Mumbai,Apparel,463
+Nike Dri-FIT Legend Shirt,WH2-Hyderabad,Hyderabad,Apparel,268
+FabIndia Cotton Kurta,WH2-Kolkata,Kolkata,Apparel,421
+Nivea Men Deodorant 150ml,WH2-Kolkata,Kolkata,Bodycare,154
+Aashirvaad Whole Wheat Atta 5kg,WH2-Mumbai,Mumbai,Groceries,440
+IKEA RANARP Floor Lamp,WH1-Pune,Pune,Home Decor,480
+Ariel Complete Detergent Powder 500g,WH2-Chennai,Chennai,Laundry,149
+boAt Airdopes 141 Earbuds,WH1-Ahmedabad,Ahmedabad,Electronics,950
+H&M Relaxed Fit Hoodie,WH2-Bangalore,Bangalore,Apparel,588
+Urban Ladder Walnut Coffee Table,WH2-Chennai,Chennai,Home Decor,131
+Aashirvaad Whole Wheat Atta 5kg,WH1-Bangalore,Bangalore,Groceries,972
+Nirma Washing Powder 1kg,WH2-Pune,Pune,Laundry,638
+Chumbak Printed Cushion Cover 40x40cm,WH2-Chennai,Chennai,Home Decor,756
+Urban Ladder Walnut Coffee Table,WH1-Bangalore,Bangalore,Home Decor,830
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Ahmedabad,Ahmedabad,Bodycare,160
+Tata Salt 1kg,WH1-Ahmedabad,Ahmedabad,Groceries,438
+Borosil Glass Mixing Bowl Set,WH1-Mumbai,Mumbai,Utensils,349
+Nirma Washing Powder 1kg,WH2-Bangalore,Bangalore,Laundry,522
+Nirma Washing Powder 1kg,WH1-Hyderabad,Hyderabad,Laundry,263
+H&M Relaxed Fit Hoodie,WH1-Chennai,Chennai,Apparel,45
+Levi's 501 Original Fit Jeans,WH2-Chennai,Chennai,Apparel,570
+Amul Gold Milk 1L,WH2-Pune,Pune,Groceries,567
+Sony Bravia 55" 4K TV,WH2-Kolkata,Kolkata,Electronics,722
+Himalaya Neem Face Wash 150ml,WH2-Delhi,Delhi,Bodycare,236
+Ariel Complete Detergent Powder 500g,WH1-Pune,Pune,Laundry,552
+Dove Cream Beauty Bathing Bar 100g,WH2-Hyderabad,Hyderabad,Bodycare,931
+Amul Gold Milk 1L,WH2-Bangalore,Bangalore,Groceries,603
+Amul Gold Milk 1L,WH2-Pune,Pune,Groceries,18
+Hawkins Contura Non-Stick Fry Pan 26cm,WH2-Hyderabad,Hyderabad,Utensils,773
+IKEA RANARP Floor Lamp,WH1-Delhi,Delhi,Home Decor,514
+IKEA RANARP Floor Lamp,WH2-Pune,Pune,Home Decor,860
+Aashirvaad Whole Wheat Atta 5kg,WH1-Chennai,Chennai,Groceries,711
+Levi's 501 Original Fit Jeans,WH2-Hyderabad,Hyderabad,Apparel,816
+Fortune Soya Oil 1L,WH1-Kolkata,Kolkata,Groceries,340
+Nirma Washing Powder 1kg,WH1-Kolkata,Kolkata,Laundry,227
+boAt Airdopes 141 Earbuds,WH2-Hyderabad,Hyderabad,Electronics,25
+Surf Excel Matic Liquid 1L,WH1-Bangalore,Bangalore,Laundry,863
+India Gate Basmati Rice (2 Years Aged) 5kg,WH2-Hyderabad,Hyderabad,Groceries,139
+Himalaya Neem Face Wash 150ml,WH1-Mumbai,Mumbai,Bodycare,427
+Nike Dri-FIT Legend Shirt,WH2-Pune,Pune,Apparel,929
+Apple MacBook Air M3 13",WH2-Mumbai,Mumbai,Electronics,939
+Tata Salt 1kg,WH2-Delhi,Delhi,Groceries,93
+Samsung Galaxy S24 128GB,WH1-Kolkata,Kolkata,Electronics,635
+Chumbak Printed Cushion Cover 40x40cm,WH2-Bangalore,Bangalore,Home Decor,435
+Dove Cream Beauty Bathing Bar 100g,WH1-Hyderabad,Hyderabad,Bodycare,845
+Fortune Soya Oil 1L,WH2-Mumbai,Mumbai,Groceries,401
+boAt Airdopes 141 Earbuds,WH1-Delhi,Delhi,Electronics,826
+Borosil Glass Mixing Bowl Set,WH2-Delhi,Delhi,Utensils,514
+Himalaya Neem Face Wash 150ml,WH1-Bangalore,Bangalore,Bodycare,969
+Himalaya Neem Face Wash 150ml,WH2-Kolkata,Kolkata,Bodycare,721
+Prestige Deluxe Alpha Pressure Cooker 5L,WH2-Pune,Pune,Utensils,399
+Himalaya Neem Face Wash 150ml,WH1-Mumbai,Mumbai,Bodycare,180
+Chumbak Printed Cushion Cover 40x40cm,WH1-Ahmedabad,Ahmedabad,Home Decor,679
+Nirma Washing Powder 1kg,WH2-Bangalore,Bangalore,Laundry,133
+H&M Relaxed Fit Hoodie,WH1-Ahmedabad,Ahmedabad,Apparel,266
+Rin Bar 250g,WH2-Ahmedabad,Ahmedabad,Laundry,681
+Levi's 501 Original Fit Jeans,WH1-Hyderabad,Hyderabad,Apparel,454
+FabIndia Cotton Kurta,WH2-Ahmedabad,Ahmedabad,Apparel,30
+Nike Dri-FIT Legend Shirt,WH2-Ahmedabad,Ahmedabad,Apparel,979
+Milton Thermosteel Flask 1L,WH1-Ahmedabad,Ahmedabad,Utensils,294
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Bangalore,Bangalore,Bodycare,698
+Hawkins Contura Non-Stick Fry Pan 26cm,WH2-Kolkata,Kolkata,Utensils,579
+Himalaya Neem Face Wash 150ml,WH1-Chennai,Chennai,Bodycare,298
+Urban Ladder Walnut Coffee Table,WH2-Hyderabad,Hyderabad,Home Decor,575
+Urban Ladder Walnut Coffee Table,WH2-Ahmedabad,Ahmedabad,Home Decor,878
+Prestige Deluxe Alpha Pressure Cooker 5L,WH2-Bangalore,Bangalore,Utensils,614
+Sony Bravia 55" 4K TV,WH1-Bangalore,Bangalore,Electronics,694
+Sony Bravia 55" 4K TV,WH1-Bangalore,Bangalore,Electronics,658
+Borosil Glass Mixing Bowl Set,WH1-Kolkata,Kolkata,Utensils,380
+boAt Airdopes 141 Earbuds,WH1-Bangalore,Bangalore,Electronics,118
+Prestige Deluxe Alpha Pressure Cooker 5L,WH1-Bangalore,Bangalore,Utensils,976
+Prestige Deluxe Alpha Pressure Cooker 5L,WH2-Pune,Pune,Utensils,582
+Sony Bravia 55" 4K TV,WH1-Ahmedabad,Ahmedabad,Electronics,275
+Samsung Galaxy S24 128GB,WH2-Bangalore,Bangalore,Electronics,692
+Dove Cream Beauty Bathing Bar 100g,WH2-Mumbai,Mumbai,Bodycare,164
+Sony Bravia 55" 4K TV,WH2-Ahmedabad,Ahmedabad,Electronics,657
+Dove Cream Beauty Bathing Bar 100g,WH1-Kolkata,Kolkata,Bodycare,281
+Ariel Complete Detergent Powder 500g,WH1-Ahmedabad,Ahmedabad,Laundry,597
+Borosil Glass Mixing Bowl Set,WH2-Hyderabad,Hyderabad,Utensils,388
+Prestige Deluxe Alpha Pressure Cooker 5L,WH1-Kolkata,Kolkata,Utensils,650
+Milton Thermosteel Flask 1L,WH1-Bangalore,Bangalore,Utensils,292
+Banana Robusta 1kg,WH1-Ahmedabad,Ahmedabad,Groceries,459
+Surf Excel Matic Liquid 1L,WH2-Mumbai,Mumbai,Laundry,754
+H&M Relaxed Fit Hoodie,WH2-Hyderabad,Hyderabad,Apparel,347
+Sony Bravia 55" 4K TV,WH1-Hyderabad,Hyderabad,Electronics,275
+Surf Excel Matic Liquid 1L,WH1-Chennai,Chennai,Laundry,404
+D'Decor Blackout Curtains 7ft,WH1-Delhi,Delhi,Home Decor,42
+boAt Airdopes 141 Earbuds,WH2-Ahmedabad,Ahmedabad,Electronics,979
+Banana Robusta 1kg,WH1-Bangalore,Bangalore,Groceries,554
+H&M Relaxed Fit Hoodie,WH1-Delhi,Delhi,Apparel,582
+boAt Airdopes 141 Earbuds,WH2-Kolkata,Kolkata,Electronics,45
+Fortune Soya Oil 1L,WH2-Bangalore,Bangalore,Groceries,186
+Samsung Galaxy S24 128GB,WH1-Hyderabad,Hyderabad,Electronics,350
+Nike Dri-FIT Legend Shirt,WH1-Hyderabad,Hyderabad,Apparel,222
+boAt Airdopes 141 Earbuds,WH2-Pune,Pune,Electronics,858
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Mumbai,Mumbai,Bodycare,831
+Tata Salt 1kg,WH1-Hyderabad,Hyderabad,Groceries,281
+FabIndia Cotton Kurta,WH1-Chennai,Chennai,Apparel,671
+Prestige Deluxe Alpha Pressure Cooker 5L,WH2-Chennai,Chennai,Utensils,258
+Borosil Glass Mixing Bowl Set,WH2-Mumbai,Mumbai,Utensils,519
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH1-Pune,Pune,Bodycare,681
+Himalaya Neem Face Wash 150ml,WH2-Bangalore,Bangalore,Bodycare,403
+H&M Relaxed Fit Hoodie,WH1-Pune,Pune,Apparel,517
+Nivea Men Deodorant 150ml,WH2-Chennai,Chennai,Bodycare,73
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Ahmedabad,Ahmedabad,Bodycare,997
+Nike Dri-FIT Legend Shirt,WH1-Pune,Pune,Apparel,886
+Dove Cream Beauty Bathing Bar 100g,WH1-Kolkata,Kolkata,Bodycare,711
+Sony Bravia 55" 4K TV,WH2-Hyderabad,Hyderabad,Electronics,818
+Rin Bar 250g,WH1-Delhi,Delhi,Laundry,210
+Ariel Complete Detergent Powder 500g,WH2-Delhi,Delhi,Laundry,871
+boAt Airdopes 141 Earbuds,WH1-Mumbai,Mumbai,Electronics,931
+Nivea Men Deodorant 150ml,WH2-Chennai,Chennai,Bodycare,83
+Himalaya Neem Face Wash 150ml,WH1-Bangalore,Bangalore,Bodycare,578
+Banana Robusta 1kg,WH1-Ahmedabad,Ahmedabad,Groceries,329
+boAt Airdopes 141 Earbuds,WH2-Bangalore,Bangalore,Electronics,546
+boAt Airdopes 141 Earbuds,WH2-Chennai,Chennai,Electronics,891
+Sony Bravia 55" 4K TV,WH2-Hyderabad,Hyderabad,Electronics,119
+Tata Salt 1kg,WH2-Chennai,Chennai,Groceries,517
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Mumbai,Mumbai,Bodycare,271
+Chumbak Printed Cushion Cover 40x40cm,WH2-Mumbai,Mumbai,Home Decor,737
+Sony Bravia 55" 4K TV,WH1-Mumbai,Mumbai,Electronics,509
+Samsung Galaxy S24 128GB,WH2-Pune,Pune,Electronics,839
+Ariel Complete Detergent Powder 500g,WH1-Chennai,Chennai,Laundry,148
+Sony Bravia 55" 4K TV,WH2-Bangalore,Bangalore,Electronics,320
+Apple MacBook Air M3 13",WH2-Bangalore,Bangalore,Electronics,172
+Rin Bar 250g,WH1-Bangalore,Bangalore,Laundry,982
+Himalaya Neem Face Wash 150ml,WH1-Hyderabad,Hyderabad,Bodycare,425
+D'Decor Blackout Curtains 7ft,WH2-Chennai,Chennai,Home Decor,312
+D'Decor Blackout Curtains 7ft,WH2-Kolkata,Kolkata,Home Decor,635
+Hawkins Contura Non-Stick Fry Pan 26cm,WH2-Bangalore,Bangalore,Utensils,515
+Dove Cream Beauty Bathing Bar 100g,WH2-Ahmedabad,Ahmedabad,Bodycare,94
+Samsung Galaxy S24 128GB,WH1-Mumbai,Mumbai,Electronics,899
+Himalaya Neem Face Wash 150ml,WH1-Kolkata,Kolkata,Bodycare,664
+H&M Relaxed Fit Hoodie,WH2-Ahmedabad,Ahmedabad,Apparel,327
+Apple MacBook Air M3 13",WH1-Hyderabad,Hyderabad,Electronics,319
+Dove Cream Beauty Bathing Bar 100g,WH2-Hyderabad,Hyderabad,Bodycare,396
+Himalaya Neem Face Wash 150ml,WH2-Pune,Pune,Bodycare,408
+Amul Gold Milk 1L,WH2-Mumbai,Mumbai,Groceries,659
+Ariel Complete Detergent Powder 500g,WH2-Pune,Pune,Laundry,910
+Surf Excel Matic Liquid 1L,WH2-Mumbai,Mumbai,Laundry,145
+Ariel Complete Detergent Powder 500g,WH1-Mumbai,Mumbai,Laundry,653
+Dove Cream Beauty Bathing Bar 100g,WH2-Chennai,Chennai,Bodycare,417
+D'Decor Blackout Curtains 7ft,WH2-Delhi,Delhi,Home Decor,76
+Tata Salt 1kg,WH2-Delhi,Delhi,Groceries,688
+Fortune Soya Oil 1L,WH2-Bangalore,Bangalore,Groceries,208
+Milton Thermosteel Flask 1L,WH2-Kolkata,Kolkata,Utensils,366
+Apple MacBook Air M3 13",WH1-Chennai,Chennai,Electronics,884
+H&M Relaxed Fit Hoodie,WH2-Pune,Pune,Apparel,806
+Himalaya Neem Face Wash 150ml,WH1-Chennai,Chennai,Bodycare,230
+Samsung Galaxy S24 128GB,WH2-Bangalore,Bangalore,Electronics,54
+boAt Airdopes 141 Earbuds,WH2-Ahmedabad,Ahmedabad,Electronics,884
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Delhi,Delhi,Bodycare,728
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Chennai,Chennai,Bodycare,898
+Ariel Complete Detergent Powder 500g,WH1-Delhi,Delhi,Laundry,968
+Aashirvaad Whole Wheat Atta 5kg,WH1-Hyderabad,Hyderabad,Groceries,726
+Prestige Deluxe Alpha Pressure Cooker 5L,WH2-Delhi,Delhi,Utensils,8
+Urban Ladder Walnut Coffee Table,WH2-Kolkata,Kolkata,Home Decor,463
+Samsung Galaxy S24 128GB,WH1-Bangalore,Bangalore,Electronics,859
+Nirma Washing Powder 1kg,WH1-Hyderabad,Hyderabad,Laundry,284
+Borosil Glass Mixing Bowl Set,WH1-Pune,Pune,Utensils,325
+Samsung Galaxy S24 128GB,WH2-Delhi,Delhi,Electronics,488
+Borosil Glass Mixing Bowl Set,WH2-Ahmedabad,Ahmedabad,Utensils,30
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Chennai,Chennai,Bodycare,454
+Milton Thermosteel Flask 1L,WH1-Bangalore,Bangalore,Utensils,982
+boAt Airdopes 141 Earbuds,WH2-Chennai,Chennai,Electronics,833
+boAt Airdopes 141 Earbuds,WH2-Mumbai,Mumbai,Electronics,630
+boAt Airdopes 141 Earbuds,WH1-Kolkata,Kolkata,Electronics,947
+Dove Cream Beauty Bathing Bar 100g,WH2-Delhi,Delhi,Bodycare,942
+Aashirvaad Whole Wheat Atta 5kg,WH1-Bangalore,Bangalore,Groceries,534
+FabIndia Cotton Kurta,WH2-Mumbai,Mumbai,Apparel,478
+Aashirvaad Whole Wheat Atta 5kg,WH2-Delhi,Delhi,Groceries,349
+Levi's 501 Original Fit Jeans,WH1-Chennai,Chennai,Apparel,180
+H&M Relaxed Fit Hoodie,WH2-Ahmedabad,Ahmedabad,Apparel,394
+boAt Airdopes 141 Earbuds,WH2-Delhi,Delhi,Electronics,225
+H&M Relaxed Fit Hoodie,WH1-Hyderabad,Hyderabad,Apparel,485
+Fortune Soya Oil 1L,WH1-Ahmedabad,Ahmedabad,Groceries,596
+Himalaya Neem Face Wash 150ml,WH1-Ahmedabad,Ahmedabad,Bodycare,303
+Aashirvaad Whole Wheat Atta 5kg,WH1-Bangalore,Bangalore,Groceries,181
+Aashirvaad Whole Wheat Atta 5kg,WH1-Delhi,Delhi,Groceries,329
+Levi's 501 Original Fit Jeans,WH2-Hyderabad,Hyderabad,Apparel,856
+Nivea Men Deodorant 150ml,WH1-Delhi,Delhi,Bodycare,779
+Aashirvaad Whole Wheat Atta 5kg,WH2-Hyderabad,Hyderabad,Groceries,218
+Aashirvaad Whole Wheat Atta 5kg,WH1-Bangalore,Bangalore,Groceries,165
+H&M Relaxed Fit Hoodie,WH1-Hyderabad,Hyderabad,Apparel,966
+Milton Thermosteel Flask 1L,WH1-Mumbai,Mumbai,Utensils,32
+Apple MacBook Air M3 13",WH2-Ahmedabad,Ahmedabad,Electronics,708
+IKEA RANARP Floor Lamp,WH2-Bangalore,Bangalore,Home Decor,483
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Delhi,Delhi,Bodycare,693
+D'Decor Blackout Curtains 7ft,WH1-Bangalore,Bangalore,Home Decor,484
+Nirma Washing Powder 1kg,WH2-Kolkata,Kolkata,Laundry,465
+D'Decor Blackout Curtains 7ft,WH2-Kolkata,Kolkata,Home Decor,215
+Rin Bar 250g,WH2-Kolkata,Kolkata,Laundry,866
+India Gate Basmati Rice (2 Years Aged) 5kg,WH1-Delhi,Delhi,Groceries,592
+Apple MacBook Air M3 13",WH2-Pune,Pune,Electronics,220
+Sony Bravia 55" 4K TV,WH1-Hyderabad,Hyderabad,Electronics,155
+Samsung Galaxy S24 128GB,WH2-Bangalore,Bangalore,Electronics,518
+Nivea Men Deodorant 150ml,WH1-Hyderabad,Hyderabad,Bodycare,832
+Nirma Washing Powder 1kg,WH2-Chennai,Chennai,Laundry,924
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH1-Chennai,Chennai,Bodycare,453
+H&M Relaxed Fit Hoodie,WH1-Delhi,Delhi,Apparel,7
+Banana Robusta 1kg,WH2-Chennai,Chennai,Groceries,789
+Tata Salt 1kg,WH2-Bangalore,Bangalore,Groceries,89
+Urban Ladder Walnut Coffee Table,WH2-Delhi,Delhi,Home Decor,544
+boAt Airdopes 141 Earbuds,WH2-Chennai,Chennai,Electronics,82
+FabIndia Cotton Kurta,WH2-Hyderabad,Hyderabad,Apparel,865
+Ariel Complete Detergent Powder 500g,WH2-Delhi,Delhi,Laundry,895
+Himalaya Neem Face Wash 150ml,WH1-Pune,Pune,Bodycare,304
+Sony Bravia 55" 4K TV,WH2-Bangalore,Bangalore,Electronics,336
+IKEA RANARP Floor Lamp,WH1-Mumbai,Mumbai,Home Decor,140
+Dove Cream Beauty Bathing Bar 100g,WH2-Bangalore,Bangalore,Bodycare,78
+boAt Airdopes 141 Earbuds,WH2-Hyderabad,Hyderabad,Electronics,914
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH1-Mumbai,Mumbai,Bodycare,980
+Aashirvaad Whole Wheat Atta 5kg,WH2-Delhi,Delhi,Groceries,307
+Nike Dri-FIT Legend Shirt,WH2-Delhi,Delhi,Apparel,31
+Milton Thermosteel Flask 1L,WH1-Hyderabad,Hyderabad,Utensils,795
+Nivea Men Deodorant 150ml,WH1-Pune,Pune,Bodycare,23
+Ariel Complete Detergent Powder 500g,WH1-Mumbai,Mumbai,Laundry,581
+boAt Airdopes 141 Earbuds,WH2-Chennai,Chennai,Electronics,534
+Levi's 501 Original Fit Jeans,WH2-Pune,Pune,Apparel,589
+Aashirvaad Whole Wheat Atta 5kg,WH1-Kolkata,Kolkata,Groceries,992
+Rin Bar 250g,WH2-Ahmedabad,Ahmedabad,Laundry,424
+Hawkins Contura Non-Stick Fry Pan 26cm,WH2-Pune,Pune,Utensils,519
+Borosil Glass Mixing Bowl Set,WH2-Ahmedabad,Ahmedabad,Utensils,285
+Chumbak Printed Cushion Cover 40x40cm,WH2-Mumbai,Mumbai,Home Decor,282
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH1-Delhi,Delhi,Bodycare,850
+Aashirvaad Whole Wheat Atta 5kg,WH2-Kolkata,Kolkata,Groceries,125
+Rin Bar 250g,WH2-Hyderabad,Hyderabad,Laundry,981
+Chumbak Printed Cushion Cover 40x40cm,WH1-Hyderabad,Hyderabad,Home Decor,260
+Hawkins Contura Non-Stick Fry Pan 26cm,WH2-Pune,Pune,Utensils,736
+Fortune Soya Oil 1L,WH2-Chennai,Chennai,Groceries,176
+IKEA RANARP Floor Lamp,WH2-Bangalore,Bangalore,Home Decor,600
+Samsung Galaxy S24 128GB,WH1-Chennai,Chennai,Electronics,683
+Fortune Soya Oil 1L,WH2-Chennai,Chennai,Groceries,405
+Sony Bravia 55" 4K TV,WH2-Bangalore,Bangalore,Electronics,200
+Tata Salt 1kg,WH1-Bangalore,Bangalore,Groceries,499
+Rin Bar 250g,WH1-Kolkata,Kolkata,Laundry,600
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Mumbai,Mumbai,Bodycare,371
+FabIndia Cotton Kurta,WH2-Kolkata,Kolkata,Apparel,682
+Nirma Washing Powder 1kg,WH2-Hyderabad,Hyderabad,Laundry,963
+Hawkins Contura Non-Stick Fry Pan 26cm,WH2-Hyderabad,Hyderabad,Utensils,38
+Milton Thermosteel Flask 1L,WH1-Pune,Pune,Utensils,43
+D'Decor Blackout Curtains 7ft,WH1-Chennai,Chennai,Home Decor,360
+India Gate Basmati Rice (2 Years Aged) 5kg,WH2-Pune,Pune,Groceries,110
+Aashirvaad Whole Wheat Atta 5kg,WH1-Kolkata,Kolkata,Groceries,815
+H&M Relaxed Fit Hoodie,WH1-Kolkata,Kolkata,Apparel,964
+Urban Ladder Walnut Coffee Table,WH2-Bangalore,Bangalore,Home Decor,462
+Amul Gold Milk 1L,WH2-Delhi,Delhi,Groceries,721
+Urban Ladder Walnut Coffee Table,WH1-Kolkata,Kolkata,Home Decor,81
+Samsung Galaxy S24 128GB,WH1-Chennai,Chennai,Electronics,343
+D'Decor Blackout Curtains 7ft,WH1-Delhi,Delhi,Home Decor,568
+Nivea Men Deodorant 150ml,WH1-Hyderabad,Hyderabad,Bodycare,673
+Chumbak Printed Cushion Cover 40x40cm,WH2-Mumbai,Mumbai,Home Decor,35
+Borosil Glass Mixing Bowl Set,WH1-Pune,Pune,Utensils,672
+Chumbak Printed Cushion Cover 40x40cm,WH1-Chennai,Chennai,Home Decor,973
+Prestige Deluxe Alpha Pressure Cooker 5L,WH1-Kolkata,Kolkata,Utensils,488
+Apple MacBook Air M3 13",WH1-Hyderabad,Hyderabad,Electronics,812
+Nivea Men Deodorant 150ml,WH2-Mumbai,Mumbai,Bodycare,906
+Aashirvaad Whole Wheat Atta 5kg,WH1-Delhi,Delhi,Groceries,278
+Himalaya Neem Face Wash 150ml,WH2-Kolkata,Kolkata,Bodycare,980
+Banana Robusta 1kg,WH2-Ahmedabad,Ahmedabad,Groceries,638
+FabIndia Cotton Kurta,WH1-Bangalore,Bangalore,Apparel,62
+Milton Thermosteel Flask 1L,WH2-Delhi,Delhi,Utensils,869
+Tata Salt 1kg,WH2-Kolkata,Kolkata,Groceries,770
+Nike Dri-FIT Legend Shirt,WH1-Ahmedabad,Ahmedabad,Apparel,266
+H&M Relaxed Fit Hoodie,WH1-Kolkata,Kolkata,Apparel,276
+boAt Airdopes 141 Earbuds,WH1-Ahmedabad,Ahmedabad,Electronics,317
+Levi's 501 Original Fit Jeans,WH1-Ahmedabad,Ahmedabad,Apparel,814
+Apple MacBook Air M3 13",WH1-Mumbai,Mumbai,Electronics,519
+IKEA RANARP Floor Lamp,WH2-Ahmedabad,Ahmedabad,Home Decor,299
+Dove Cream Beauty Bathing Bar 100g,WH1-Chennai,Chennai,Bodycare,26
+Ariel Complete Detergent Powder 500g,WH1-Ahmedabad,Ahmedabad,Laundry,484
+Pantene Advanced Hairfall Solution Shampoo 180ml,WH2-Ahmedabad,Ahmedabad,Bodycare,106
+Sony Bravia 55" 4K TV,WH1-Hyderabad,Hyderabad,Electronics,398
+Fortune Soya Oil 1L,WH1-Pune,Pune,Groceries,678
+India Gate Basmati Rice (2 Years Aged) 5kg,WH2-Hyderabad,Hyderabad,Groceries,330
+Nike Dri-FIT Legend Shirt,WH2-Ahmedabad,Ahmedabad,Apparel,520
+Himalaya Neem Face Wash 150ml,WH1-Ahmedabad,Ahmedabad,Bodycare,409
+IKEA RANARP Floor Lamp,WH1-Mumbai,Mumbai,Home Decor,74
+Borosil Glass Mixing Bowl Set,WH1-Mumbai,Mumbai,Utensils,943
+H&M Relaxed Fit Hoodie,WH2-Kolkata,Kolkata,Apparel,244
+Rin Bar 250g,WH2-Ahmedabad,Ahmedabad,Laundry,795
+Dove Cream Beauty Bathing Bar 100g,WH1-Kolkata,Kolkata,Bodycare,429
+Rin Bar 250g,WH2-Mumbai,Mumbai,Laundry,892
+Borosil Glass Mixing Bowl Set,WH1-Delhi,Delhi,Utensils,872
+Hawkins Contura Non-Stick Fry Pan 26cm,WH2-Kolkata,Kolkata,Utensils,766
+Banana Robusta 1kg,WH1-Chennai,Chennai,Groceries,516
+H&M Relaxed Fit Hoodie,WH1-Hyderabad,Hyderabad,Apparel,669
+Tata Salt 1kg,WH2-Ahmedabad,Ahmedabad,Groceries,386
+H&M Relaxed Fit Hoodie,WH1-Kolkata,Kolkata,Apparel,555
+Surf Excel Matic Liquid 1L,WH1-Delhi,Delhi,Laundry,758
