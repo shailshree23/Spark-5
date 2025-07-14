@@ -1,19 +1,17 @@
+# backend/app/routes/insights_api.py
+
 from fastapi import APIRouter, Query
-from backend.app.utils.data_loader import load_all_data
+# We import the new function we just created
+from backend.app.utils.data_loader import get_insights_data 
 
 router = APIRouter()
 
 @router.get("/")
 def get_insights(
-    region: str = Query(None, description="Filter by a specific region"),
-    category: str = Query(None, description="Filter by a specific category"),
-    warehouse: str = Query(None, description="Filter by a specific warehouse")
+    region: str = Query(None),
+    category: str = Query(None),
+    warehouse: str = Query(None)
 ):
-    try:
-        # Pass the query parameters directly to the data loading function
-        insights = load_all_data(region=region, category=category, warehouse=warehouse)
-        return insights
-    except Exception as e:
-        # It's helpful to log the error on the server
-        print(f"Error in get_insights: {e}")
-        return {"error": str(e)}
+    # This API is now very clean. It just calls our data processing function.
+    insights = get_insights_data(region=region, category=category, warehouse=warehouse)
+    return insights

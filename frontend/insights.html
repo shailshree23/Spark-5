@@ -1,117 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
-  <meta charset="UTF-8" />
-  <title>Inventory Insights</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <title>Insights - OdinSight</title>
+    <!-- Tailwind CSS for layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Link to the main theme CSS -->
+    <link rel="stylesheet" href="/frontend/css/theme.css">
+
+    <!-- Link to our new, empty insights-specific CSS -->
+    <link rel="stylesheet" href="/frontend/css/insights.css"> 
+    
+    <!-- Chart.js for graphs (for later steps) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Feather Icons for the sidebar icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Adding this style block to fix the .active class without touching theme.css -->
+    <style>
+        .sidebar-nav a.active {
+            background-color: var(--primary-accent);
+            color: white;
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
-  <!-- This is the NEW navigation bar. Replace the old one in all files. -->
-<nav class="bg-gray-900 p-4 text-white flex justify-between items-center shadow-lg">
-    <div class="text-xl font-bold tracking-wider" style="color: #50FFB1;">MarketRadarPro</div>
-    <div class="space-x-6">
-        <a href="market_radar.html" class="hover:text-green-300">MarketRadar</a>
-        <a href="planner.html" class="hover:text-green-300">Planner</a>
-        <a href="social.html" class="hover:text-green-300">Social Pulse</a>
-        <a href="insights.html" class="hover:text-green-300">Insights</a>
+<body class="bg-[--background] text-[--text-primary]">
+    <header class="top-nav">
+        <div class="top-nav-title">OdinSight</div>
+    </header>
+    <div class="page-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <button id="sidebar-toggle" class="sidebar-toggle-btn">
+                <i data-feather="menu"></i>
+            </button>
+            <nav class="sidebar-nav">
+                <a href="market_radar.html"><i data-feather="bar-chart-2"></i><span>MarketRadar</span></a>
+                <a href="planner.html"><i data-feather="calendar"></i><span>Planner</span></a>
+                <a href="social.html"><i data-feather="trending-up"></i><span>Social Pulse</span></a>
+                <!-- CORRECTED an error here: class="active" now has a space -->
+                <a href="insights.html" class="active"><i data-feather="pie-chart"></i><span>Insights</span></a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content" style="grid-template-columns: 1fr; overflow-y: auto;">
+            <div class="space-y-6">
+                <!-- Top Section: Title and Filters -->
+                <div class="panel flex flex-wrap justify-between items-center gap-y-4">
+                    <h1 class="panel-title mb-0">Insights Dashboard</h1>
+                    <div class="flex items-center gap-4 flex-wrap">
+                        <select id="region-filter" class="form-select w-auto md:w-48" disabled>
+                            <option value="">All Regions</option>
+                        </select>
+                        <select id="category-filter" class="form-select w-auto md:w-48" disabled>
+                            <option value="">All Categories</option>
+                        </select>
+                         <select id="warehouse-filter" class="form-select w-auto md:w-48" disabled>
+                            <option value="">All Warehouses</option>
+                        </select>
+                        <button id="show-insights-btn" class="btn btn-primary px-6">Show Insights</button>
+                    </div>
+                </div>
+
+                <!-- Summary Cards Section -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="panel text-center">
+                        <h2 class="font-semibold text-lg text-[--text-secondary]">Total Sales</h2>
+                        <p id="total-sales" class="text-4xl font-bold mt-2 text-[--primary-accent]">₹0</p>
+                    </div>
+                    <div class="panel text-center">
+                        <h2 class="font-semibold text-lg text-[--text-secondary]">Inventory Items</h2>
+                        <p id="total-inventory" class="text-4xl font-bold mt-2 text-[--primary-accent]">0</p>
+                    </div>
+                    <div class="panel text-center">
+                        <h2 class="font-semibold text-lg text-[--text-secondary]">Trending Products</h2>
+                        <p id="total-trending" class="text-4xl font-bold mt-2 text-[--primary-accent]">0</p>
+                    </div>
+                </div>
+
+                <!-- Charts Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="panel">
+                        <h2 class="panel-title">Sales by Region</h2>
+                        <div id="selected-products-region-container" class="flex flex-wrap gap-2 mb-4"></div>
+                        <canvas id="sales-by-region-chart"></canvas>
+                    </div>
+                    <div class="panel">
+                        <h2 class="panel-title">Sales Times Series</h2>
+                        <div id="selected-products-time-container" class="flex flex-wrap gap-2 mb-4"></div>
+                        <canvas id="sales-time-series-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-</nav>
-  <div class="container mx-auto mt-6 space-y-6">
-    <div class="flex flex-wrap gap-4 mb-4 items-center">
-      <label for="region" class="font-medium">Region:</label>
-      <select id="region" class="p-2 border rounded">
-        <option value="">All</option>
-        <option>Delhi</option>
-        <option>Bangalore</option>
-        <option>Mumbai</option>
-        <option>Chennai</option>
-        <option>Hyderabad</option>
-        <option>Kolkata</option>
-        <option>Pune</option>
-        <option>Ahmedabad</option>
-        <option>Jaipur</option>
-        <option>Lucknow</option>
-        <option>Kanpur</option>
-        <option>Nagpur</option>
-        <option>Indore</option>
-      </select>
-      <label for="category" class="font-medium">Category:</label>
-      <select id="category" class="p-2 border rounded">
-        <option value="">All</option>
-        <option>Electronics</option>
-        <option>Fashion</option>
-        <option>Grocery</option>
-      </select>
-      <label for="warehouse" class="font-medium">Warehouse:</label>
-      <select id="warehouse" class="p-2 border rounded">
-        <option value="">All</option>
-        <option>WH1</option>
-        <option>WH2</option>
-        <option>WH3</option>
-        <option>WH4</option>
-        <option>WH5</option>
-        <option>WH6</option>
-        <option>WH7</option>
-        <option>WH8</option>
-        <option>WH9</option>
-        <option>WH10</option>
-        <option>WH11</option>
-        <option>WH12</option>
-        <option>WH13</option>
-      </select>
-      <button onclick="loadInsights()" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Show Insights</button>
-    </div>
-    <div id="summary" class="grid md:grid-cols-3 gap-6 text-white font-bold">
-      <div class="bg-green-500 p-6 rounded shadow text-center">
-        <h2>Total Sales</h2>
-        <p id="total-sales" class="text-3xl mt-2">₹0</p>
-      </div>
-      <div class="bg-yellow-500 p-6 rounded shadow text-center">
-        <h2>Inventory Items</h2>
-        <p id="total-inventory" class="text-3xl mt-2">0</p>
-      </div>
-      <div class="bg-blue-500 p-6 rounded shadow text-center">
-        <h2>Trending Products</h2>
-        <p id="trend-count" class="text-3xl mt-2">0</p>
-      </div>
-    </div>
-    <div class="bg-white p-6 rounded shadow" id="section-inventory-product">
-      <h2 class="text-lg font-semibold mb-4">Inventory by Product</h2>
-      <canvas id="inventory-chart" height="120"></canvas>
-    </div>
-    <div class="bg-white p-6 rounded shadow" id="section-inventory-region">
-      <h2 class="text-lg font-semibold mb-4">Inventory by Region</h2>
-      <canvas id="inventory-region-chart" height="120"></canvas>
-    </div>
-    <div class="bg-white p-6 rounded shadow" id="section-inventory-category">
-      <h2 class="text-lg font-semibold mb-4">Inventory by Category</h2>
-      <canvas id="inventory-category-chart" height="120"></canvas>
-    </div>
-    <div class="bg-white p-6 rounded shadow" id="section-inventory-warehouse">
-      <h2 class="text-lg font-semibold mb-4">Inventory by Warehouse</h2>
-      <canvas id="inventory-warehouse-chart" height="120"></canvas>
-    </div>
-    <div class="bg-white p-6 rounded shadow overflow-x-auto" id="section-sales-region">
-      <h2 class="text-lg font-semibold mb-4">Sales by Region</h2>
-      <table id="sales-region-table" class="min-w-full text-sm text-left">
-        <thead><tr><th>Region</th><th>Product</th><th>Sales</th></tr></thead>
-        <tbody></tbody>
-      </table>
-    </div>
-    <div class="bg-white p-6 rounded shadow overflow-x-auto" id="section-sales-category">
-      <h2 class="text-lg font-semibold mb-4">Sales by Category</h2>
-      <table id="sales-category-table" class="min-w-full text-sm text-left">
-        <thead><tr><th>Category</th><th>Product</th><th>Sales</th></tr></thead>
-        <tbody></tbody>
-      </table>
-    </div>
-    <div class="bg-white p-6 rounded shadow" id="section-sales-time">
-      <h2 class="text-lg font-semibold mb-4">Sales Time Series (Monthly)</h2>
-      <canvas id="sales-time-chart" height="120"></canvas>
-    </div>
-  </div>
-  <script src="js/insights.js"></script>
+
+    <!-- This script is now INSIDE the HTML file. It will definitely run. -->
+    <script>
+      // Make the icons render
+      feather.replace();
+
+      // This makes the sidebar collapse/expand
+      document.getElementById('sidebar-toggle')?.addEventListener('click', () => {
+          document.getElementById('sidebar').classList.toggle('collapsed');
+      });
+      
+    </script>
+        <!-- Add this line before the closing </body> tag -->
+    <script src="/frontend/js/insights.js"></script>
+</body>
 </body>
 </html>

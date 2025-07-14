@@ -20,7 +20,7 @@ app.add_middleware(
 app.include_router(map_api.router, prefix="/api/market_radar") 
 app.include_router(planner_api.router, prefix="/api/planner")
 app.include_router(social_api.router, prefix="/api/social")
-app.include_router(insights_api.router, prefix="/api/insights")
+app.include_router(insights_api.router, prefix="/api/insights", tags=["Insights"])
 app.include_router(filters_api.router, prefix="/api/filters") # For MarketRadar (untouched)
 
 # THIS LINE IS THE FIX: Register the new router for the planner page
