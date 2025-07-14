@@ -1,67 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Supply Planner</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <title>OdinSight - Supply Planner</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/planner.css"> 
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body class="bg-gray-50">
-  <!-- This is the NEW navigation bar. Replace the old one in all files. -->
-<nav class="bg-gray-900 p-4 text-white flex justify-between items-center shadow-lg">
-    <div class="text-xl font-bold tracking-wider" style="color: #50FFB1;">MarketRadarPro</div>
-    <div class="space-x-6">
-        <a href="market_radar.html" class="hover:text-green-300">MarketRadar</a>
-        <a href="planner.html" class="hover:text-green-300">Planner</a>
-        <a href="social.html" class="hover:text-green-300">Social Pulse</a>
-        <a href="insights.html" class="hover:text-green-300">Insights</a>
+<body>
+    <!-- Fixed Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="top-nav-title">OdinSight</div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="page-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <button id="sidebar-toggle" class="sidebar-toggle-btn">
+                <i data-feather="menu"></i>
+            </button>
+            <nav class="sidebar-nav">
+                <a href="market_radar.html"><i data-feather="bar-chart-2"></i><span>MarketRadar</span></a>
+                <a href="planner.html" class="active"><i data-feather="calendar"></i><span>Planner</span></a>
+                <a href="social.html"><i data-feather="trending-up"></i><span>Social Pulse</span></a>
+                <a href="insights.html"><i data-feather="pie-chart"></i><span>Insights</span></a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="planner-main-content">
+            <div class="planner-centered-wrapper">
+                <div class="planner-container">
+                    
+                    <!-- Left Column: Filters and Table -->
+                    <div class="planner-left-column">
+                        <div class="panel">
+                            <h1 class="panel-title">Supply Planner</h1>
+                            <div class="planner-filters-grid">
+                                <div>
+                                    <label for="region-filter">Region:</label>
+                                    <select id="region-filter" class="form-select"></select>
+                                </div>
+                                <div>
+                                    <label for="warehouse-filter">Warehouses:</label>
+                                    <select id="warehouse-filter" class="form-select"></select>
+                                </div>
+                                <div>
+                                    <label for="category-filter">Category:</label>
+                                    <select id="category-filter" class="form-select"></select>
+                                </div>
+                                <div>
+                                    <label for="days-filter">No. of Days:</label>
+                                    <input type="number" id="days-filter" value="30" class="form-input">
+                                </div>
+                                <div class="get-forecast-container">
+                                    <button id="get-forecast-btn" class="btn btn-primary">Get Forecast Plan</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel table-panel">
+                            <div class="table-controls">
+                                <div>
+                                    <label for="product-search">Search:</label>
+                                    <input type="text" id="product-search" placeholder="By product..." class="form-input">
+                                </div>
+                                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <label for="stock-lasts-filter">Stocks Lasting upto:</label>
+                                    <select id="stock-lasts-filter" class="form-select">
+                                        <option value="">All</option>
+                                        <option value="gt30">> 30 days</option>
+                                        <option value="lt30"><= 30 days</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="checkbox-filters" style="margin-bottom: 1rem;">
+                                <span>Show:</span>
+                                <label><input type="checkbox" name="status" value="Understock" checked> Understock</label>
+                                <label><input type="checkbox" name="status" value="Out of Stock" checked> Out of Stock</label>
+                                <label><input type="checkbox" name="status" value="Overstock" checked> Overstock</label>
+                            </div>
+                            <div class="table-container">
+                                <table class="w-full">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Current Stock</th>
+                                            <th>Forecast Demand</th>
+                                            <th>Stocks Last Till</th>
+                                            <th>Inventory Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="planner-body">
+                                        <tr><td colspan="5" class="placeholder-text">Click "Get Forecast Plan" to begin.</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Graph and Insights -->
+                    <div class="planner-right-column">
+                        <div class="panel" style="flex-grow: 1.5;">
+                            <h2 class="panel-title">Show Forecast Graph</h2>
+                            <canvas id="forecast-graph"></canvas>
+                            <p id="forecast-placeholder" class="placeholder-text">Select a product to see its forecast.</p>
+                        </div>
+                        <div class="panel">
+                            <h2 class="panel-title">Recommended Action:</h2>
+                            <p id="recommended-action" class="placeholder-text">Select a product.</p>
+                        </div>
+                        <div class="panel">
+                            <h2 class="panel-title">Selected Product Based Insights</h2>
+                            <div id="product-insights-container" class="card-container">
+                                <p id="insights-placeholder" class="placeholder-text">Select a product.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
     </div>
-</nav>
-  <div class="container mx-auto mt-6 space-y-4">
-    <!-- REVERTED TO 4 COLUMNS AND REMOVED THE MODEL_TYPE DROPDOWN -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <select id="region" class="p-2 border rounded">
-        <option value="">All Regions</option>
-        <option>Delhi</option>
-        <option>Bangalore</option>
-        <option>Mumbai</option>
-      </select>
-      <select id="warehouse" class="p-2 border rounded">
-        <option value="">All Warehouses</option>
-        <option>WH1</option>
-        <option>WH2</option>
-        <option>WH3</option>
-      </select>
-      <select id="category" class="p-2 border rounded">
-        <option value="">All Categories</option>
-        <option>Electronics</option>
-        <option>Fashion</option>
-        <option>Grocery</option>
-      </select>
-      <input type="number" id="timeframe" placeholder="Forecast Days" value="30" class="p-2 border rounded" />
-    </div>
-    <button onclick="loadPlanner()" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
-      Get Forecast Plan
-    </button>
-    <div class="overflow-auto shadow rounded">
-      <table class="min-w-full table-auto mt-4 bg-white border border-gray-200 text-sm text-left">
-        <thead class="bg-blue-100">
-          <tr>
-            <th class="px-4 py-2">Product</th>
-            <th class="px-4 py-2">Current Stock</th>
-            <th class="px-4 py-2">Forecast Demand</th>
-            <th class="px-4 py-2">Show Forecast</th>
-            <th class="px-4 py-2">Stock Lasts Till</th>
-            <th class="px-4 py-2">Inventory Status</th>
-          </tr>
-        </thead>
-        <tbody id="planner-body" class="divide-y divide-gray-100">
-          <!-- rows injected dynamically -->
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="js/planner.js"></script>
+
+    <script>
+        feather.replace(); 
+        document.getElementById('sidebar-toggle').addEventListener('click', () => {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+        });
+    </script>
+    <script src="js/planner.js"></script>
 </body>
 </html>
